@@ -12,7 +12,7 @@ Some of its features includes but is not limited to:
 
 - ✅ **A Full Featured Blog with Tagging**
 - ✅ **Fully theme-able styles with for buttons, shapes, backgrounds, surfaces, etc.**
-- ✅ **Responsive mobile-friendly design**
+- ✅ **Responsive mobile-friendly landing pages**
 - ✅ **SEO Best Practices (Open Graph, Canonical URLs, sitemap)**
 - ✅ **Performant Google Fonts Setup**
 - ✅ **Contact Forms Setup for Netlify, Formspree, Formspark, etc.**
