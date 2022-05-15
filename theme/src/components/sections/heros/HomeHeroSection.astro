@@ -1,6 +1,6 @@
 ---
 import { Container, Button } from '@odyssey-theme/components';
-
+import settings from '../../../config/settings.js';
 import ThemeSwitcher from '../../theme-switcher/ThemeSwitcher.astro';
 ---
 
@@ -21,9 +21,7 @@ import ThemeSwitcher from '../../theme-switcher/ThemeSwitcher.astro';
 					>
 					<Button href="/theme/style-guide" unelevated>Style Guide</Button>
 				</div>
-				<div>
-					<ThemeSwitcher />
-				</div>
+        {settings.disableThemeSwitcher ? null : <ThemeSwitcher />}
 		</div>
 		<div class="hero-section__image">
 				<picture>
