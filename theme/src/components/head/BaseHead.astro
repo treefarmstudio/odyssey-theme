@@ -74,7 +74,7 @@ const image = new URL(Astro.props.image || './social.png', Astro.site);
 <link rel="stylesheet" href="/styles/index.css" />
 
 <!-- For Demonstration of the themes -->
-{settings.disableThemeSwitcher ? null : <ThemeProvider />}
+{settings.enableThemeSwitcher && <ThemeProvider />}
 
 <!-- Google Analytics -->
 <script>

@@ -21,7 +21,7 @@ import ThemeSwitcher from '../../theme-switcher/ThemeSwitcher.astro';
 					>
 					<Button href="/theme/style-guide" unelevated>Style Guide</Button>
 				</div>
-        {settings.disableThemeSwitcher ? null : <ThemeSwitcher />}
+        {settings.enableThemeSwitcher && <ThemeSwitcher />}
 		</div>
 		<div class="hero-section__image">
 				<picture>

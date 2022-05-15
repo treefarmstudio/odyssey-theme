@@ -3,5 +3,5 @@ export default {
 	description: `A simple, clean, and modern theme a startup or businesses' marketing website.`,
 	url: `https://odyssey-theme.littlesticks.dev`, // No trailing slash!
 	name: `Odyssey`, // The short name of the business or brand name. Used for things like the copyright in the footer.
-  disableThemeSwitcher: false,
+  enableThemeSwitcher: true,
 };
