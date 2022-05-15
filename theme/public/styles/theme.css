@@ -4,8 +4,6 @@
 	--theme-primary-hover: hsl(0, 0%, 20%);
 	--theme-on-primary: #fff;
 
-	--theme-secondary: #fff;
-
 	--theme-bg: #fff;
 	--theme-on-bg: #000;
 
@@ -22,8 +20,6 @@
 
 	/* Theme Transition */
 	--theme-transition: 0.2s ease-in-out;
-
-	--color-white: #fff;
 
 	/* Theme Layout */
 	--section-margin: 3rem;
@@ -48,8 +44,6 @@
 	--theme-primary-hover: hsl(0, 0%, 20%);
 	--theme-on-primary: #fff;
 
-	--theme-secondary: #fff;
-
 	--theme-bg: #fff;
 	--theme-on-bg: #000;
 
@@ -67,8 +61,6 @@
 	/* Theme Transition */
 	--theme-transition: 0.2s ease-in-out;
 
-	--color-white: #fff;
-
 	/* Theme Layout */
 	--section-margin: 3rem;
 	--theme-grid-gap: 1rem;
@@ -85,8 +77,6 @@
 	--theme-primary: hsl(0, 0%, 100%);
 	--theme-primary-hover: hsl(0, 0%, 90%);
 	--theme-on-primary: hsl(0, 0%, 0%);
-
-	--theme-secondary: hsl(0, 0%, 100%);
 
 	--theme-bg: hsl(0, 0%, 2%);
 	--theme-on-bg: hsl(0, 0%, 100%);
@@ -108,8 +98,6 @@
 	--theme-primary-hover: #395a3b;
 	--theme-on-primary: hsl(0, 0%, 100%);
 
-	--theme-secondary: hsl(0, 0%, 100%);
-
 	--theme-bg: #eeeff1;
 	--theme-on-bg: #272f27;
 
@@ -129,8 +117,6 @@
 	--theme-primary-hover: #2569c3;
 	--theme-on-primary: hsl(0, 0%, 100%);
 
-	--theme-secondary: hsl(0, 0%, 100%);
-
 	--theme-bg: #fafafa;
 	--theme-on-bg: #0c0d0d;
 
@@ -147,8 +133,6 @@
 	--theme-primary: #e38a20;
 	--theme-primary-hover: #eb870f;
 	--theme-on-primary: hsl(0, 0%, 100%);
-
-	--theme-secondary: hsl(0, 0%, 100%);
 
 	--theme-bg: #fffffe;
 	--theme-on-bg: #5e4536;
