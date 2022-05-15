@@ -1,4 +1,4 @@
-[![Netlify Status](https://api.netlify.com/api/v1/badges/f1c8c6a3-7801-40c4-adf0-bd4c20edfe81/deploy-status)](https://app.netlify.com/sites/odyssey-theme/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/9c5f2860-7adb-4b7d-91ad-9d13eda8bc46/deploy-status)](https://app.netlify.com/sites/odyssey-theme/deploys)
 
 # Odyssey Theme
 
