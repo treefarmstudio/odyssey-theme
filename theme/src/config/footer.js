@@ -11,7 +11,7 @@ export const footerSocials = [
     icon: youtubeIcon,
   },
   {
-    url: 'https://twitter.com/',
+    url: 'https://twitter.com/littlesticksdev',
     icon: twitterIcon,
   },
   {
