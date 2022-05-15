@@ -1,0 +1,13 @@
+{
+  "name": "odyssey-components",
+  "version": "0.0.1",
+  "private": false,
+  "scripts": {
+    "start": "astro --root demo dev",
+    "build": "astro --root demo build",
+    "serve": "astro --root demo preview"
+  },
+  "devDependencies": {
+    "astro": "^1.0.0-beta.17"
+  }
+}

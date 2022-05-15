@@ -1,0 +1,36 @@
+---
+import FeatureCard from '../../../packages/components/cards/FeatureCard.astro';
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width" />
+		<title>Welcome to Astro</title>
+		
+    <link rel="preload" as="style" href="/styles/index.css" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="preload"
+      href="https://fonts.googleapis.com/css2?family=Roboto+Serif:wght@600..700&family=Lato:wght@300..700&display=swap"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <noscript>
+      <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Serif:wght@600..700&family=Lato:wght@300..700&display=swap"
+        rel="stylesheet"
+        type="text/css"
+      />
+    </noscript>
+
+    <link rel="stylesheet" href="/styles/index.css" />
+	</head>
+
+	<body>
+    <FeatureCard href="/company/legal" imgSrc="/assets/images/placeholder-screenshot.png" title="Legal Page" />
+	</body>
+</html>

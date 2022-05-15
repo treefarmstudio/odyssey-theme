@@ -1,0 +1,49 @@
+---
+const {href, imgSrc, title} = Astro.props;
+---
+
+<div class="feature-card__card">
+  <a class="feature-card__link" href={href}>
+    <div class="featured-card__content">
+      <h3 class="feature-card__title">{title}</h3>
+      <img class="feature-card__img" src={imgSrc} />
+    </div>
+  </a>
+</div> 
+
+<style>
+  .feature-card__card {
+    background-color: var(--theme-surface-1);
+    color: var(--theme-on-surface-1);
+    border-radius: var(--theme-shape-radius);
+  }
+  .feature-card__link {
+    display: block;
+    text-decoration: none;
+  }
+  .featured-card__content {
+    padding: 1rem 1rem 0 1rem;
+     display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow-y: hidden;
+  }
+  .feature-card__img {
+    --image-shadow: 0 -0.5rem 1rem rgba(138, 138, 138, 0.12);
+    margin: 0 auto;
+    width: 60%;
+    height: 100%;
+    object-fit: cover;
+    /* border-radius: 1rem 1rem 0 0; */
+    box-shadow: var(--image-shadow);
+    transform: translateY(0.5rem);
+    transition: transform var(--theme-transition);
+  }
+  .feature-card__link:hover .feature-card__img {
+    transform: translateY(0);
+  }
+  .feature-card__title {
+    font-family: var(--theme-font-family-sans);
+  }
+</style>

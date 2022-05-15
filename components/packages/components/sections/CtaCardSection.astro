@@ -1,0 +1,32 @@
+---
+import Container from '../core/Container.astro';
+
+const {background, color} = Astro.props;
+---
+<Container>
+  <section class="cta-card__section" style={background && `--section-bg:${background}; --section-color:${color}`}>
+    <div class="cta-card__container">
+      <slot></slot>
+    </div>
+  </section>
+</Container>
+
+<style>
+  .cta-card__section {
+    --section-bg: var(--theme-surface-1);
+    --section-color: var(--theme-on-surface-1);
+    margin: var(--section-margin) auto;
+    padding: 2rem;
+    background-color: var(--section-bg);
+    color: var(--section-color);
+    border-radius: var(--theme-shape-radius);
+  }
+  .cta-card__container {
+    margin: 0 auto;
+    max-width: var(--container-max-width-narrow);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+</style>

@@ -1,0 +1,54 @@
+:root {
+  --font-family-serif: 'Roboto Serif', Georgia, Cambria, "Times New Roman", Times, serif;
+	--font-family-sans: 'Lato', -apple-system, BlinkMacSystemFont, sans-serif;
+	--font-size-sm: clamp(0.8rem, 0.25vw + 0.74rem, 0.94rem);
+	--font-size-base: clamp(1rem, 0.45vw + 0.89rem, 1.25rem);
+	--font-size-md: clamp(1.25rem, 0.76vw + 1.06rem, 1.67rem);
+	--font-size-lg: clamp(1.56rem, 1.2vw + 1.26rem, 2.22rem);
+	--font-size-xl: clamp(1.95rem, 1.83vw + 1.5rem, 2.96rem);
+	--font-size-xxl: clamp(2.44rem, 2.74vw + 1.76rem, 3.95rem);
+	--font-size-xxxl: clamp(3.05rem, 4.02vw + 2.05rem, 5.26rem);
+}
+
+html,
+body {
+	line-height: 1.5;
+	font-family: var(--font-family-sans);
+	font-size: var(--font-size-base);
+	color: var(--theme-on-bg);
+}
+
+h1, h2, h3 {
+  font-family: var(--font-family-serif);
+  font-weight: 700;
+}
+
+h1 {
+	font-size: var(--font-size-xxl);
+}
+
+h2 {
+	font-size: var(--font-size-xl);
+}
+
+h3 {
+	font-size: var(--font-size-lg);
+}
+
+h1,
+h2 {
+	line-height: 1.1;
+	font-weight: 700;
+}
+
+h3 {
+	font-weight: 500;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+	margin-bottom: 1rem;
+}

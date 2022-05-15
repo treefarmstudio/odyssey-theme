@@ -1,0 +1,38 @@
+---
+const {navData} = Astro.props;
+---
+
+{navData && <nav>
+  <ul>
+    {navData.map(navItem => (
+      (<li><a href={navItem.slug} >{navItem.title}</a></li>)
+    ))}
+  </ul>
+</nav> }
+
+<style>
+  nav {
+    display: flex;
+  }
+  nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+  }
+  nav ul li a {
+    text-decoration: none;
+    margin-right: 1rem;
+    color: inherit;
+    opacity: 0.72;
+    transition: opacity linear 150ms;
+  }
+  nav ul li a:hover {
+    opacity: 1;
+  }
+  @media(max-width: 600px) {
+    nav {
+      display: none;
+    }
+  }
+</style>

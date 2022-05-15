@@ -1,0 +1,13 @@
+@import url('/styles/reset.css');
+@import url('/styles/theme.css');
+@import url('/styles/typography.css');
+
+:root {
+	--navbar-height: 60px;
+}
+
+body {
+	max-width: 1920px;
+	margin: 0 auto;
+	background-color: var(--theme-bg);
+}

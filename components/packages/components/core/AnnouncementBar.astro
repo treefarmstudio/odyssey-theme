@@ -1,0 +1,31 @@
+---
+const {text, href, newTab} = Astro.props;
+---
+
+<div class="announcement-banner__container">
+  <p>
+    {newTab ?
+    <a href={href} target="_blank" rel="noopener noreferrer">
+      {text}
+    </a> :
+    <a href={href}>
+      {text}
+    </a>}
+  </p>
+</div>
+
+<style>
+.announcement-banner__container {
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--theme-primary);
+  color: var(--theme-on-primary);
+  position: relative;
+  z-index: 100;
+}
+.announcement-banner__container p {
+  margin: 0 auto;
+}
+</style>

@@ -1,0 +1,18 @@
+---
+import Container from '../core/Container.astro';
+
+const {narrow} = Astro.props;
+---
+
+<Container narrow={narrow}>
+  <section class="text__section">
+    <slot></slot>
+  </section>
+</Container>
+
+<style>
+  .text__section {
+    margin: var(--section-margin) auto;
+  }
+</style>
+

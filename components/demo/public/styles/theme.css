@@ -1,0 +1,21 @@
+:root {
+  /* Theme Colors */
+	--theme-primary: #000;
+	--theme-on-primary: #fff;
+	
+  --theme-secondary: #fff;
+
+	--theme-bg: #fff;
+	--theme-on-bg: #000;
+
+  /* Theme Shape */
+  /* Set this to 0 if you want all of the rounded cards, images, etc to be straight edges */
+  --theme-shape-radius: clamp(1rem, 2rem, 3rem);
+
+	--color-white: #fff;
+
+  /* Theme Layout */
+  --section-margin: 3rem;
+  --container-max-width: 1440px;
+  --container-padding: 0 1rem;
+}
