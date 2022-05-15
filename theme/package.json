@@ -1,7 +1,7 @@
 {
-	"name": "astro-odyssey-theme",
-	"version": "0.0.1",
-	"private": true,
+	"name": "odyssey-theme",
+	"version": "1.0.0",
+	"private": false,
 	"scripts": {
 		"dev": "astro dev",
 		"start": "astro dev",

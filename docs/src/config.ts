@@ -1,6 +1,6 @@
 export const SITE = {
 	title: 'Odyssey Theme Documentation',
-	description: 'Your website description.',
+	description: 'This is the official documentation for the Odyssey Theme.',
 	defaultLanguage: 'en_US',
 };
 
@@ -39,7 +39,7 @@ export const SIDEBAR = {
 		{ text: 'Introduction', link: 'en/introduction' },
 
 		{ text: 'Theme', header: true },
-		{ text: 'Page 4', link: 'en/page-4' },
+		{ text: 'Customizing The Theme', link: 'en/customizing-the-theme' },
     { text: 'Components', header: true },
 		{ text: 'Page 4', link: 'en/page-4' },
 	],
