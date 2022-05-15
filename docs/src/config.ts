@@ -41,6 +41,6 @@ export const SIDEBAR = {
 		{ text: 'Theme', header: true },
 		{ text: 'Customizing The Theme', link: 'en/customizing-the-theme' },
     { text: 'Components', header: true },
-		{ text: 'Page 4', link: 'en/page-4' },
+		{ text: 'Components Index', link: 'en/components' },
 	],
 };
