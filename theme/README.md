@@ -24,7 +24,7 @@ View a [live demo](https://odyssey-theme.littlesticks.dev/) of the Odyssey Theme
 
 ## Documentation
 
-Visit the [Odyssey Theme Documentation](https://odyssey-theme-docs.littlesticks.dev/en/introduction/) to learn more about how to install and use the components.  
+Visit the [Odyssey Theme Documentation](https://odyssey-theme-docs.littlesticks.dev/en/introduction/) to learn more about how to customize the theme and use the components.
 
 ## Installation & Setup
 
