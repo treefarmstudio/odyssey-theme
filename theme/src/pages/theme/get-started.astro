@@ -1,0 +1,82 @@
+---
+import { Button, Container, TextCardSection } from '@odyssey-theme/components';
+import Layout from '../../layouts/Page.astro';
+
+const seo = {
+	title: 'Get Started using the Astro Odyssey Theme',
+	description: 'Get started on how to setup and use this Astro theme.',
+};
+---
+
+<Layout {seo}>
+	<Container>
+		<TextCardSection>
+			<h1>Get Started with Odyssey</h1>
+			<p>
+				To get started with Odyssey Theme we would highly recommend you use the
+				documentation or if this isn't your first rodeo you can use one of the
+				quick launch buttons below.
+			</p>
+			<div class="cta-buttons__container">
+				<Button
+					href="https://odyssey-theme-docs.jaydanurwin.com/en/introduction/"
+					newTab
+					materialIcon="launch">View Docs</Button
+				>
+				<Button
+					href="https://github.com/jaydanurwin/odyssey-theme"
+					outlined
+					newTab
+          materialIcon="launch"
+					>View Source
+				</Button>
+			</div>
+			<div class="code-buttons__container">
+				<a
+					href="https://app.netlify.com/start/deploy?repository=https://github.com/jaydanurwin/odyssey-theme"
+				>
+					<img src="https://www.netlify.com/img/deploy/button.svg" height="36px"
+					/>
+				</a>
+				<a
+					href="https://stackblitz.com/github/jaydanurwin/odyssey-theme/tree/main/theme"
+				>
+					<img
+						src="https://developer.stackblitz.com/img/open_in_stackblitz.svg"
+						height="36px"
+					/>
+				</a>
+				<a
+					href="https://codesandbox.io/s/github/jaydanurwin/odyssey-theme/tree/main/theme"
+				>
+					<img src="https://astro.new/open-in-codesandbox.svg" height="36px" />
+				</a>
+				<a
+					href="https://gitpod.io/#https://github.com/jaydanurwin/odyssey-theme/tree/main/theme"
+				>
+					<img src="https://astro.new/open-in-gitpod.svg" height="36px" />
+				</a>
+			</div>
+		</TextCardSection>
+	</Container>
+</Layout>
+
+<style>
+	.cta-buttons__container {
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.cta-buttons__container :global(a) {
+    margin-right: 1rem;
+		margin-bottom: 1rem;
+	}
+	.code-buttons__container {
+		margin: 1rem auto;
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.code-buttons__container > a {
+		margin-right: 1rem;
+		margin-bottom: 1rem;
+	}
+</style>

@@ -1,0 +1,69 @@
+:root {
+  --font-size-sm: clamp(14.4px, 0.07vw + 14.13px, 15px);
+  --font-size-base: clamp(18px, 0.23vw + 17.09px, 20px);
+  --font-size-md: clamp(22.5px, 0.47vw + 20.61px, 26.66px);
+  --font-size-lg: clamp(28.13px, 0.84vw + 24.76px, 35.54px);
+  --font-size-xl: clamp(35.16px, 1.39vw + 29.6px, 47.37px);
+  --font-size-xxl: clamp(43.95px, 2.18vw + 35.22px, 63.15px);
+  --font-size-xxxl: clamp(54.93px, 3.32vw + 41.64px, 84.17px);
+}
+
+html,
+body {
+	line-height: 1.5;
+	font-family: var(--theme-font-family-sans);
+	font-size: var(--font-size-base);
+	color: var(--theme-on-bg);
+}
+
+h1,
+h2,
+h3 {
+	font-family: var(--theme-font-family-serif);
+	font-weight: 700;
+}
+
+h1 {
+	font-size: var(--font-size-xxl);
+}
+
+h2 {
+	font-size: var(--font-size-xl);
+}
+
+h3 {
+	font-size: var(--font-size-lg);
+}
+
+h1,
+h2 {
+	line-height: 1.1;
+	font-weight: 700;
+}
+
+h3 {
+	font-weight: 500;
+}
+
+h6 {
+	font-size: var(--font-size-sm);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+	margin: 0 0 1rem 0;
+}
+
+blockquote {
+	font-style: italic;
+	font-size: var(--font-size-base);
+	font-weight: 500;
+	margin-bottom: 1rem;
+	padding-left: 1.5rem;
+	border-left: 0.25rem solid var(--theme-on-bg);
+}

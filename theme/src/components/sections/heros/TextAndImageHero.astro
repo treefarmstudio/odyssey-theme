@@ -1,0 +1,58 @@
+---
+import { Container } from '@odyssey-theme/components';
+
+const { reversed } = Astro.props;
+---
+
+<Container>
+	<section
+		class={`text-and-image__section ${
+			reversed && `text-and-image__section--reversed`
+		}`}
+	>
+		<div class="text-and-image__text">
+			<slot name="text-container" />
+			<div class="text-and-image__btns">
+				<slot name="btns-container" />
+			</div>
+		</div>
+		<div class="text-and-image__image">
+			<slot name="image-container" />
+		</div>
+	</section>
+</Container>
+
+<style>
+	.text-and-image__section {
+		margin: var(--section-margin) auto;
+		min-height: clamp(90vh, 100vw, calc(100vh - var(--navbar-height)));
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		align-items: center;
+		gap: 1rem;
+	}
+	.text-and-image__section--reversed .text-and-image__text {
+		order: 2;
+	}
+	.text-and-image__text {
+		padding: 2rem 0;
+		justify-self: center;
+		max-width: 25rem;
+	}
+	.text-and-image__image :global(img) {
+		width: 100%;
+		height: 100%;
+		max-height: 80vh;
+		object-fit: cover;
+		border-radius: var(--theme-shape-radius);
+	}
+	@media (max-width: 768px) {
+		.text-and-image__section {
+			margin: 2rem auto 0 auto;
+			grid-template-columns: 1fr;
+		}
+		.text-and-image__text {
+			padding: 2rem 0;
+		}
+	}
+</style>
