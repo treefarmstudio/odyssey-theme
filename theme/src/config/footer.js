@@ -15,7 +15,7 @@ export const footerSocials = [
     icon: twitterIcon,
   },
   {
-    url: 'https://github.com/jaydanurwin/odyssey-theme',
+    url: 'https://github.com/littlesticksdev/odyssey-theme',
     icon: githubIcon,
   },
 ]
