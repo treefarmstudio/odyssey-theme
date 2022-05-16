@@ -228,4 +228,15 @@ Sometimes you want the animations to be consistent, especially on hover effects.
 
 ### Layouts
 
+- `--section-margin` - The default top and bottom margin between sections
+- `--theme-grid-gap` - The default gap between items in a grid of cards, images, etc.
+-	`--container-max-width` - The default container max width for content
+-	`--container-max-width-narrow` - The narrow container max width for content
+-	`--container-padding` - The default gutter padding on the container
+
 ### Custom Font(s)
+
+1. Edit the Google Fonts import URL found in the `BaseHead.astro` file in the `src/components/head/` folder.
+
+2. Update your font stack with the `--theme-font-family-serif` and `--theme-font-family-sans` custom properties.
+
