@@ -7,16 +7,27 @@ const { navData, rightMenu } = Astro.props;
   const menuButton = document.querySelector('#menuButton')
   const navHeader = document.querySelector('#odysseyNavHeader');
   const menuButtonIcon = document.querySelector('#menuButtonIcon');
+  let scrollPosition = 0;
 
   menuButton.addEventListener('click', toggleMenu)
 
   function toggleMenu() {
     if (navHeader.hasAttribute('mobile-menu-open', true)) {
       menuButtonIcon.innerHTML = `menu`;
-      bodyElement.style.overflow = 'auto';
+      // unlock scroll position
+      bodyElement.style.removeProperty('overflow');
+      bodyElement.style.removeProperty('position');
+      bodyElement.style.removeProperty('top');
+      bodyElement.style.removeProperty('width');
+      window.scrollTo(0, scrollPosition);
     } else {
       menuButtonIcon.innerHTML = `close`;
+      // lock scroll position
+      scrollPosition = window.pageYOffset;
       bodyElement.style.overflow = 'hidden';
+      bodyElement.style.position = 'fixed';
+      bodyElement.style.top = `-${scrollPosition}px`;
+      bodyElement.style.width = '100%';
     }
     navHeader.toggleAttribute('mobile-menu-open');
   }

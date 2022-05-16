@@ -1,7 +1,7 @@
 {
   "name": "@odyssey-theme/components",
   "description": "Components for the Astro Odyssey theme",
-  "version": "0.1.65",
+  "version": "0.1.66",
   "repository": {
     "type": "git",
     "url": "git@github.com:littlesticksdev/odyssey-theme"
@@ -11,8 +11,9 @@
   "exports": "./index.js",
   "keywords": [
     "astro-component",
-    "button",
-    "example"
+    "astro-theme",
+    "starter",
+    "theme"
   ],
   "publishConfig": {
     "access": "public"
