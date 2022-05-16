@@ -4,4 +4,4 @@
 
 This is the source for the Odyssey Theme's Docs site
 
-## [View Docs](https://odyssey-theme-docs.jaydanurwin.com/)
+## [View Docs](https://odyssey-theme-docs.littlesticks.dev/)
