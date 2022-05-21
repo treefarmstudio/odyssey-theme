@@ -148,3 +148,27 @@ export const footerLists = [
 ```
 
 The title is the non-clickable title of the list and the nested items array is the list of links under that title. Feel free to customize the lists as needed.
+
+## Sitemap
+
+Odyssey Theme will automatically generate a `sitemap.xml` file for you using Astro's `@astrojs/sitemap` integration. 
+
+To setup the sitemap with the correct URLs you will need to open the `astro.config.mjs` at the base level of the theme files which should look something like this
+
+```js
+import { defineConfig } from 'astro/config';
+import lit from '@astrojs/lit';
+import sitemap from "@astrojs/sitemap";
+
+// https://astro.build/config
+export default defineConfig({
+  site: 'https://odyssey-theme.littlesticks.dev/',
+  // Your public domain, e.g.: https://my-site.dev/. Used to generate sitemaps and canonical URLs.
+  sitemap: true,
+  // Generate sitemap (set to "false" to disable)
+  integrations: [lit(), sitemap()] // Add renderers to the config
+
+});
+```
+
+Simply edit the site with the live URL that your website will be hosted on and you're all set!
