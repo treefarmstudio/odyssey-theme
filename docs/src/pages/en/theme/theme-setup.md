@@ -1,7 +1,7 @@
 ---
 title: Theme Setup
 description: Learn how to setup Odyssey Theme's seo, logo, favicon, nav items, etc.
-layout: ../../layouts/MainLayout.astro
+layout: ../../../layouts/MainLayout.astro
 ---
 
 After you've had some time to familiarize yourself with the the theme files you're probably wondering "How do I make it my own?" This guide will help you swap out titles, descriptions, logos, etc.
@@ -171,4 +171,4 @@ export default defineConfig({
 });
 ```
 
-Simply edit the site with the live URL that your website will be hosted on and you're all set!
+Simply edit the `site:` field with the live URL that your website will be hosted on and you're all set!

@@ -1,14 +1,14 @@
 ---
 title: Odyssey Theme Components
-description: Lorem ipsum dolor sit amet - 2
-layout: ../../layouts/MainLayout.astro
+description: View all of the components
+layout: ../../../layouts/MainLayout.astro
 ---
 
 Here is a list of all Odyssey Theme's components
 
 ## Blog Components
-- BlogPostPreview
-- BlogPostsList
+- [BlogPostPreview](/en/components/blog#blogpostpreview)
+- [BlogPostsList](/en/components/blog#blogpostslist)
 
 ## Core Components
 - Button

@@ -1,7 +1,7 @@
 ---
 title: Customizing The Theme
 description: Learn how to customize Odyssey Theme's theme styles.
-layout: ../../layouts/MainLayout.astro
+layout: ../../../layouts/MainLayout.astro
 ---
 
 Now the fun part. 
