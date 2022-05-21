@@ -39,6 +39,7 @@ export const SIDEBAR = {
 		{ text: 'Introduction', link: 'en/introduction' },
 
 		{ text: 'Theme', header: true },
+		{ text: 'Theme Setup', link: 'en/theme-setup' },
 		{ text: 'Customizing The Theme', link: 'en/customizing-the-theme' },
     { text: 'Components', header: true },
 		{ text: 'Components Index', link: 'en/components' },

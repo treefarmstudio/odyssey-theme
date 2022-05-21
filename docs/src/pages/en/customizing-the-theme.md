@@ -1,155 +1,8 @@
 ---
 title: Customizing The Theme
-description: Lorem ipsum dolor sit amet - 2
+description: Learn how to customize Odyssey Theme's theme styles.
 layout: ../../layouts/MainLayout.astro
 ---
-
-After you've had some time to familiarize yourself with the the theme files you're probably wondering "How do I make it my own?" This guide will help you swap out titles, descriptions, logos, etc.
-
-
-## Global SEO
-
-In the theme files you'll find a `settings.js` file under the `src/config/` folder. The contents of the file should look something like this:
-
-```js
-export default {
-  title: `Odyssey Astro Theme | A Marketing Website Theme for Startups and Businesses`,
-  description: `A simple, clean, and modern theme a startup or businesses' marketing website.`,
-  url: `https://odyssey-theme.littlesticks.dev`, // No trailing slash!
-  name: `Odyssey`, // The short name of the business or brand name. Used for things like the copyright in the footer.
-  enableThemeSwitcher: true,
-};  
-```
-
-The title and description fields here are used as the global defaults if one is not provided at the page level.
-
-## Adding Your Own Logo
-
-Under `src/components/` you'll see a `Logo.astro` file that should look something like this:
-
-```astro
-<p class="odyssey-logo">Odyssey</p>
-
-<style>
-  .odyssey-logo {
-    width: fit-content;
-    margin: 0;
-    font-family: var(--theme-font-family-serif);
-    font-size: var(--font-size-md);
-    color: inherit;
-  }
-  .odyssey-logo:hover {
-    text-decoration: underline;
-    cursor: pointer;
-  }
-</style>
-```
-
-The easiest way to swap out the Odyssey logo across the site is to replace this code with the SVG code for your company's logo or using an `<img>` tag linked to your company logo.
-
-You should see that the Odyssey logo changes across the theme once this is updated.
-
-If you would like more control or don't like this method of using a `<Logo>` component you will find most of the components also include a `<slot>` for the logo which will let you completely replace it.
-
-## Favicon
-
-To replace the favicon you simply need to create your own `favicon.png` file and replace the one found under the `public/` folder.
-
-If you don't want to use a `.png` file you will need to go to the `BaseHead.astro` component under `src/components/head/` and find this line to replace with your own favicon file.
-
-```html
-<link rel="icon" type="image/png" href="/favicon.png" />
-```
-
-## Open Graph / Social Image
-
-To replace the default Open Graph image that displays when the link to your website is shared create your own `social.png` file and replace the one found under the `public/` folder.
-
-## Navigation Items
-
-Customizing the navigation items is easily done by editing the array of items in the `nav.js` file found under the `src/config/` folder.
-
-It will look something like this:
-
-```js
-export const nav = [
-  {
-    title: 'Home',
-    slug: '/',
-  },
-  {
-    title: 'Blog',
-    slug: '/blog',
-  },
-  {
-    title: 'About',
-    slug: '/company/about',
-  },
-  {
-    title: 'Contact',
-    slug: '/company/contact',
-  },
-];
-```
-
-## Footer Links
-
-In the `src/config/` folder you'll find at `footer.js` file which is where the footer social icons, social links, and the footer nav items are updated.
-
-### Social Links
-
-The social links list will look something like this.
-
-```js
-export const footerSocials = [
-  {
-    url: 'https://instagram.com/',
-    icon: instagramIcon,
-  },
-  {
-    url: 'https://youtube.com/',
-    icon: youtubeIcon,
-  },
-  {
-    url: 'https://twitter.com/littlesticksdev',
-    icon: twitterIcon,
-  },
-  {
-    url: 'https://github.com/littlesticksdev/odyssey-theme',
-    icon: githubIcon,
-  },
-];
-```
-
-The URLs are already set to safely open a new tab for the user when clicked so simply change our the URLs if you're happy with the icons provided.
-
-However, if you'd like to customize the icons you can do this by providing your own icon SVGs in the `icons.js` file under the `src/icons/` folder.
-
-### Footer Link Lists
-
-Similar to the top-level nav items you'll see a `footerLists` array in `footer.js`
-
-```js
-export const footerLists = [
-  {
-    title: 'Landing Pages',
-    items: [
-      {
-        title: 'Landing Page 1',
-        slug: '/landing-pages/landing-1',
-      },
-      {
-        title: 'Landing Page 2',
-        slug: '/landing-pages/landing-2',
-      },
-    ],
-  },
-  ...
-```
-
-The title is the non-clickable title of the list and the nested items array is the list of links under that title. Feel free to customize the lists as needed.
-
-## Creating A Custom Theme
 
 Now the fun part. 
 
@@ -204,7 +57,7 @@ Second, if you are only going to have one theme on your site (most common) then 
 
 Look below for a breakdown of each property.
 
-### Colors
+## Colors
 
 Here is a quick breakdown of the color properties:
 
@@ -218,15 +71,15 @@ Here is a quick breakdown of the color properties:
 - `--theme-surface-2` - Similar to the surface-1 color but used less often. Feel free to be more creative with this surface to make it pop on the page.
 - `--theme-on-surface-2` - The color used for text on top of the surface-2 color
 
-### Shapes
+## Shapes
 
 You'll notice a lot of rounded corners on the Odyssey Theme but if you look closely when the "Dark" theme is enabled the corners are all hard edges. This is because of the global `--theme-shape-radius` property. It will determine the shape of things like cards and images.
 
-### Transition
+## Transition
 
 Sometimes you want the animations to be consistent, especially on hover effects. This is where you would use the `--theme-transition` property.
 
-### Layouts
+## Layouts
 
 - `--section-margin` - The default top and bottom margin between sections
 - `--theme-grid-gap` - The default gap between items in a grid of cards, images, etc.
@@ -234,7 +87,7 @@ Sometimes you want the animations to be consistent, especially on hover effects.
 -	`--container-max-width-narrow` - The narrow container max width for content
 -	`--container-padding` - The default gutter padding on the container
 
-### Custom Font(s)
+## Custom Font(s)
 
 1. Edit the Google Fonts import URL found in the `BaseHead.astro` file in the `src/components/head/` folder.
 
