@@ -45,5 +45,8 @@ export const SIDEBAR = {
 		{ text: 'Components Overview', link: 'en/components' },
 		{ text: 'Blog Components', link: 'en/components/blog' },
 		{ text: 'Core Components', link: 'en/components/core' },
+		{ text: 'Feature Components', link: 'en/components/feature' },
+		{ text: 'Form Components', link: 'en/components/form' },
+		{ text: 'Section Components', link: 'en/components/section' },
 	],
 };

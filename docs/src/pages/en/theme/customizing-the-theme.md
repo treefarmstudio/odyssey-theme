@@ -12,6 +12,17 @@ This is one of the core features of Odyssey Theme and we've made it super easy t
 
 First, If you are not planning on using the theme switcher found on the demo's home page we would recommend you go to the `settings.js` file under `src/config/` and set `enableThemeSwitcher` to false. This will remove the theme switcher components and javascript from your website.
 
+It should look something like this.
+
+```js
+export default {
+  title: `Odyssey Astro Theme | A Marketing Website Theme for Startups and Businesses`,
+  description: `A simple, clean, and modern theme a startup or businesses' marketing website.`,
+  ...
+  enableThemeSwitcher: false,
+};
+```
+
 Second, if you are only going to have one theme on your site (most common) then you can delete all of the `[data-theme]` rules from the file and only keep the `:root` theme that looks something like this.
 
 ```css

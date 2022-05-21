@@ -12,13 +12,15 @@ Here is a list of all Odyssey Theme's components
 
 ## Core Components
 - Button
-- FeatureCard
-- AnnouncementBar
 - Container
 - Footer
 - Header
 - Nav
 - SkipLink
+
+## Feature Components
+- AnnouncementBar
+- FeatureCard
 - YouTubeEmbed
 
 ## Form Components
