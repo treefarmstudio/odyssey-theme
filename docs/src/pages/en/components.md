@@ -4,7 +4,7 @@ description: Lorem ipsum dolor sit amet - 2
 layout: ../../layouts/MainLayout.astro
 ---
 
-Here is a list of all Odyssey Theme's components:
+Here is a list of all Odyssey Theme's components
 
 ## Blog Components
 - BlogPostPreview
