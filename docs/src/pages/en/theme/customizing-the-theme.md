@@ -1,0 +1,106 @@
+---
+title: Customizing The Theme
+description: Learn how to customize Odyssey Theme's theme styles.
+layout: ../../../layouts/MainLayout.astro
+---
+
+Now the fun part. 
+
+Editing the theme! 🎉
+
+This is one of the core features of Odyssey Theme and we've made it super easy to make the overall look and feel of the site your own with just a few top-level CSS custom properties. These custom properties and demo themes will be found in the `theme.css` file under `public/styles/`.
+
+First, If you are not planning on using the theme switcher found on the demo's home page we would recommend you go to the `settings.js` file under `src/config/` and set `enableThemeSwitcher` to false. This will remove the theme switcher components and javascript from your website.
+
+It should look something like this.
+
+```js
+export default {
+  title: `Odyssey Astro Theme | A Marketing Website Theme for Startups and Businesses`,
+  description: `A simple, clean, and modern theme a startup or businesses' marketing website.`,
+  ...
+  enableThemeSwitcher: false,
+};
+```
+
+Second, if you are only going to have one theme on your site (most common) then you can delete all of the `[data-theme]` rules from the file and only keep the `:root` theme that looks something like this.
+
+```css
+:root {
+	/* Theme Colors */
+	--theme-primary: hsl(0, 0%, 0%);
+	--theme-primary-hover: hsl(0, 0%, 20%);
+	--theme-on-primary: #fff;
+
+	--theme-bg: #fff;
+	--theme-on-bg: #000;
+
+	--theme-surface-1: #f2f2f2;
+	--theme-on-surface-1: #000;
+
+	--theme-surface-2: #cce6d0;
+	--theme-on-surface-2: #000;
+
+	/* Theme Shapes */
+	/* Set this to 0 if you want all of the rounded cards, images, etc to be straight edges */
+	--theme-shape-radius: clamp(1rem, 2rem, 3rem);
+	--theme-button-border-radius: 3rem;
+
+	/* Theme Transition */
+	--theme-transition: 0.2s ease-in-out;
+
+	/* Theme Layout */
+	--section-margin: 3rem;
+	--theme-grid-gap: 1rem;
+	--container-max-width: 1440px;
+	--container-max-width-narrow: 960px;
+	--container-padding: 0 1rem;
+
+	--theme-blog-post-header-width: 1200px;
+
+	/* Theme Fonts */
+	--theme-font-family-serif: 'Roboto Serif', Georgia, Cambria, 'Times New Roman',
+		Times, serif;
+	--theme-font-family-sans: 'Lato', -apple-system, BlinkMacSystemFont,
+		sans-serif;
+}
+```
+
+Look below for a breakdown of each property.
+
+## Colors
+
+Here is a quick breakdown of the color properties:
+
+- `--theme-primary` - The primary color of the theme. This would be the color used for the button backgrounds.
+- `--theme-primary-hover` - The color you would like the primary color to change to when hovered over.
+- `--theme-on-primary` - The color of text layered on top of the primary color.
+- `--theme-bg` - The background color of the site
+- `--theme-on-bg` - Default body text color
+- `--theme-surface-1` - The color used for cards layered on top of the background. Think of it like a global accent color or a secondary background color.
+- `--theme-on-surface-1` - The color used for text on top of the surface-1 color
+- `--theme-surface-2` - Similar to the surface-1 color but used less often. Feel free to be more creative with this surface to make it pop on the page.
+- `--theme-on-surface-2` - The color used for text on top of the surface-2 color
+
+## Shapes
+
+You'll notice a lot of rounded corners on the Odyssey Theme but if you look closely when the "Dark" theme is enabled the corners are all hard edges. This is because of the global `--theme-shape-radius` property. It will determine the shape of things like cards and images.
+
+## Transition
+
+Sometimes you want the animations to be consistent, especially on hover effects. This is where you would use the `--theme-transition` property.
+
+## Layouts
+
+- `--section-margin` - The default top and bottom margin between sections
+- `--theme-grid-gap` - The default gap between items in a grid of cards, images, etc.
+-	`--container-max-width` - The default container max width for content
+-	`--container-max-width-narrow` - The narrow container max width for content
+-	`--container-padding` - The default gutter padding on the container
+
+## Custom Font(s)
+
+1. Edit the Google Fonts import URL found in the `BaseHead.astro` file in the `src/components/head/` folder.
+
+2. Update your font stack with the `--theme-font-family-serif` and `--theme-font-family-sans` custom properties.
+
