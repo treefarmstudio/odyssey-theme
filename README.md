@@ -20,7 +20,7 @@ Some of its features includes but is not limited to:
 
 ## Demo
 
-View a [live demo](https://odyssey-theme.littlesticks.dev/) of the Odyssey Theme.
+View a [live demo](https://odyssey.littlesticks.dev/) of the Odyssey Theme.
 
 ## Documentation
 
