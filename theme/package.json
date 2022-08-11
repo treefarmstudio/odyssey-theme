@@ -14,14 +14,12 @@
 		"format": "npx prettier -w ."
 	},
 	"devDependencies": {
-		"@astrojs/lit": "^0.1.2",
 		"@astrojs/mdx": "^0.8.2",
 		"@astrojs/sitemap": "^0.1.0",
 		"@odyssey-theme/components": "^0.1.66",
-		"@webcomponents/template-shadowroot": "^0.1.0",
 		"astro": "^1.0.2",
 		"date-fns": "^2.28.0",
-		"lit": "^2.2.3",
+		"lit": "^2.2.8",
 		"prettier-plugin-astro": "^0.0.12"
 	}
 }
