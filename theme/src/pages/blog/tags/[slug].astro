@@ -1,11 +1,11 @@
 ---
 import Layout from '../../../layouts/Page.astro'
-import { Container, BlogPostPreview } from '@odyssey-theme/components';
+import { Container } from '@odyssey-theme/components';
 import {generateTagData} from '../../../utils/helpers.js'
 
 
 export async function getStaticPaths() {
-  const allPosts = await Astro.glob('../posts/*.md');
+  const allPosts = await Astro.glob('../posts/*.mdx');
   const sortedPosts = allPosts.sort((a, b) => new Date(b.frontmatter.date).valueOf() - new Date(a.frontmatter.date).valueOf());
   const allCategoriesUnique = new Set();
   
