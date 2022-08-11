@@ -8,7 +8,7 @@ import {
 import Layout from '../../layouts/Page.astro';
 import NewsletterForm from '../../components/forms/NewsletterForm.astro';
 
-const posts = await Astro.glob('./posts/*.md').then(posts =>
+const posts = await Astro.glob('./posts/*.mdx').then(posts =>
 	posts
 		.map(({ frontmatter, url }) => ({
 			title: frontmatter.title,

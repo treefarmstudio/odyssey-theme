@@ -1,8 +1,11 @@
 ---
 import { Container, Button } from '@odyssey-theme/components';
 import settings from '../../../config/settings.js';
-import ThemeSwitcher from '../../theme-switcher/ThemeSwitcher.astro';
 ---
+
+<script>
+  import '../../theme-switcher/theme-switcher.ts';
+</script>
 
 <Container>
 	<section class="hero-section__section">
@@ -21,7 +24,7 @@ import ThemeSwitcher from '../../theme-switcher/ThemeSwitcher.astro';
 					>
 					<Button href="/theme/style-guide" unelevated>Style Guide</Button>
 				</div>
-        {settings.enableThemeSwitcher && <ThemeSwitcher />}
+        {settings.enableThemeSwitcher && <theme-switcher></theme-switcher>}
 		</div>
 		<div class="hero-section__image">
 				<picture>
