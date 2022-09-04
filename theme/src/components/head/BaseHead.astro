@@ -11,7 +11,8 @@ export interface Props {
 
 const title = Astro.props.title || settings.title;
 const description = Astro.props.description || settings.description;
-const canonicalURL = Astro.props.canonicalURL || new URL(Astro.url.pathname, Astro.site);
+const canonicalURL =
+	Astro.props.canonicalURL || new URL(Astro.url.pathname, Astro.site);
 const image = new URL(Astro.props.image || './social.png', Astro.site);
 ---
 
@@ -78,8 +79,8 @@ const image = new URL(Astro.props.image || './social.png', Astro.site);
 
 <!-- Google Analytics -->
 <script>
-  var host = window.location.hostname;
-  if(host != 'localhost') {
-    // Place Google Analytics code here.
-  }
+	var host = window.location.hostname;
+	if (host != 'localhost') {
+		// Place Google Analytics code here.
+	}
 </script>

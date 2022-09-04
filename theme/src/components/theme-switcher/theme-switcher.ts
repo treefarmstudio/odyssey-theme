@@ -31,7 +31,7 @@ export class ThemeSwitcher extends LitElement {
 			}
 			button[active] {
 				border: 2px solid var(--theme-primary);
-        box-shadow: 0 0 12px 1px var(--theme-primary);
+				box-shadow: 0 0 12px 1px var(--theme-primary);
 			}
 			button:hover {
 				border: 2px solid var(--theme-primary);

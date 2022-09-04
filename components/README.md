@@ -2,7 +2,7 @@
 
 # Odyssey Theme Components
 
-## Install 
+## Install
 
 ```bash
 npm install --save-dev @odyssey-theme/components
@@ -10,20 +10,20 @@ npm install --save-dev @odyssey-theme/components
 
 ## Demo
 
-View a [Live Demo](https://odyssey-theme.littlesticks.dev/) of the Odyssey Theme to see these components in action. 
+View a [Live Demo](https://odyssey-theme.littlesticks.dev/) of the Odyssey Theme to see these components in action.
 
 Additionally, the source code for that demo is available [here](https://github.com/littlesticksdev/odyssey-theme).
 
 ## Documentation
 
-Visit the [Odyssey Theme Documentation](https://odyssey-theme-docs.littlesticks.dev/en/introduction/) to learn more about how to install and use the components.  
+Visit the [Odyssey Theme Documentation](https://odyssey-theme-docs.littlesticks.dev/en/introduction/) to learn more about how to install and use the components.
 
 ## Components
 
 All of the Astro components are available under a single package of `@odyssey-theme/components` for the sake of simplicity in maintenance and usage. However, you can view the source of each individual component with the links below.
 
 | Components                                                                          |
-| ------------------------------------------------------------------------------------|
+| ----------------------------------------------------------------------------------- |
 | [BlogPostPreview](packages/components/blog/BlogPostPreview.astro)                   |
 | [BlogPostsList](packages/components/blog/BlogPostsList.astro)                       |
 | [Button](packages/components/buttons/Button.astro)                                  |
@@ -45,5 +45,3 @@ All of the Astro components are available under a single package of `@odyssey-th
 | [TextSection](packages/components/sections/TextSection.astro)                       |
 | [ThreeColumnTextSection](packages/components/sections/ThreeColumnTextSection.astro) |
 | [YouTubeEmbedSection](packages/components/sections/YouTubeEmbedSection.astro)       |
-
-

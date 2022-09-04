@@ -1,14 +1,20 @@
 ---
-const {navData} = Astro.props;
+const { navData } = Astro.props;
 ---
 
-{navData && <nav>
-  <ul>
-    {navData.map(navItem => (
-      (<li><a href={navItem.slug} >{navItem.title}</a></li>)
-    ))}
-  </ul>
-</nav> }
+{
+  navData && (
+    <nav>
+      <ul>
+        {navData.map((navItem) => (
+          <li>
+            <a href={navItem.slug}>{navItem.title}</a>
+          </li>
+        ))}
+      </ul>
+    </nav>
+  )
+}
 
 <style>
   nav {
@@ -30,7 +36,7 @@ const {navData} = Astro.props;
   nav ul li a:hover {
     opacity: 1;
   }
-  @media(max-width: 600px) {
+  @media (max-width: 600px) {
     nav {
       display: none;
     }

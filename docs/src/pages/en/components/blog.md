@@ -22,11 +22,11 @@ This component is meant to be used in tandem with the `<BlogPostsList>` componen
 ### Example
 
 ```astro
-{posts?.map((post) => {
-  return (
-    <BlogPostPreview post={post} />
-  )
-})} 
+{
+  posts?.map((post) => {
+    return <BlogPostPreview post={post} />;
+  })
+}
 ```
 
 ## BlogPostsList
@@ -43,21 +43,21 @@ This component generates a list of `<BlogPostPreview>` components in a grid layo
 
 ```astro
 ---
-const posts = await Astro.glob('./posts/*.md').then(posts =>
-	posts
-		.map(({ frontmatter, url }) => ({
-			title: frontmatter.title,
-			description: frontmatter.description,
-			publishDate: parse(frontmatter.publishDate, 'MMMM d, yyyy', new Date()),
-			featuredImage: frontmatter.featuredImage,
-			excerpt: frontmatter.excerpt,
-			href: url,
-		}))
-		.sort((a, b) => {
-			if (isBefore(a.publishDate, b.publishDate)) return 1;
-			if (isBefore(b.publishDate, a.publishDate)) return -1;
-			return 0;
-		})
+const posts = await Astro.glob("./posts/*.md").then((posts) =>
+  posts
+    .map(({ frontmatter, url }) => ({
+      title: frontmatter.title,
+      description: frontmatter.description,
+      publishDate: parse(frontmatter.publishDate, "MMMM d, yyyy", new Date()),
+      featuredImage: frontmatter.featuredImage,
+      excerpt: frontmatter.excerpt,
+      href: url,
+    }))
+    .sort((a, b) => {
+      if (isBefore(a.publishDate, b.publishDate)) return 1;
+      if (isBefore(b.publishDate, a.publishDate)) return -1;
+      return 0;
+    })
 );
 ---
 
@@ -65,6 +65,3 @@ const posts = await Astro.glob('./posts/*.md').then(posts =>
 
 <BlogPostsList posts={posts} />
 ```
-
-
-

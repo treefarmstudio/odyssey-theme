@@ -1,12 +1,16 @@
 ---
-import Container from '../core/Container.astro';
+import Container from "../core/Container.astro";
 
-const {background, color} = Astro.props;
+const { background, color } = Astro.props;
 ---
+
 <Container>
-  <section class="cta-card__section" style={background && `--section-bg:${background}; --section-color:${color}`}>
+  <section
+    class="cta-card__section"
+    style={background && `--section-bg:${background}; --section-color:${color}`}
+  >
     <div class="cta-card__container">
-      <slot></slot>
+      <slot />
     </div>
   </section>
 </Container>

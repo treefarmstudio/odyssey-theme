@@ -28,7 +28,7 @@ layout: ../../../layouts/MainLayout.astro
 
 ### Example
 
-## Header 
+## Header
 
 [View Source Code]()
 

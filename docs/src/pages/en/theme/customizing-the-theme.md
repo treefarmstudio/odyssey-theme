@@ -4,7 +4,7 @@ description: Learn how to customize Odyssey Theme's theme styles.
 layout: ../../../layouts/MainLayout.astro
 ---
 
-Now the fun part. 
+Now the fun part.
 
 Editing the theme! 🎉
 
@@ -27,42 +27,41 @@ Second, if you are only going to have one theme on your site (most common) then 
 
 ```css
 :root {
-	/* Theme Colors */
-	--theme-primary: hsl(0, 0%, 0%);
-	--theme-primary-hover: hsl(0, 0%, 20%);
-	--theme-on-primary: #fff;
+  /* Theme Colors */
+  --theme-primary: hsl(0, 0%, 0%);
+  --theme-primary-hover: hsl(0, 0%, 20%);
+  --theme-on-primary: #fff;
 
-	--theme-bg: #fff;
-	--theme-on-bg: #000;
+  --theme-bg: #fff;
+  --theme-on-bg: #000;
 
-	--theme-surface-1: #f2f2f2;
-	--theme-on-surface-1: #000;
+  --theme-surface-1: #f2f2f2;
+  --theme-on-surface-1: #000;
 
-	--theme-surface-2: #cce6d0;
-	--theme-on-surface-2: #000;
+  --theme-surface-2: #cce6d0;
+  --theme-on-surface-2: #000;
 
-	/* Theme Shapes */
-	/* Set this to 0 if you want all of the rounded cards, images, etc to be straight edges */
-	--theme-shape-radius: clamp(1rem, 2rem, 3rem);
-	--theme-button-border-radius: 3rem;
+  /* Theme Shapes */
+  /* Set this to 0 if you want all of the rounded cards, images, etc to be straight edges */
+  --theme-shape-radius: clamp(1rem, 2rem, 3rem);
+  --theme-button-border-radius: 3rem;
 
-	/* Theme Transition */
-	--theme-transition: 0.2s ease-in-out;
+  /* Theme Transition */
+  --theme-transition: 0.2s ease-in-out;
 
-	/* Theme Layout */
-	--section-margin: 3rem;
-	--theme-grid-gap: 1rem;
-	--container-max-width: 1440px;
-	--container-max-width-narrow: 960px;
-	--container-padding: 0 1rem;
+  /* Theme Layout */
+  --section-margin: 3rem;
+  --theme-grid-gap: 1rem;
+  --container-max-width: 1440px;
+  --container-max-width-narrow: 960px;
+  --container-padding: 0 1rem;
 
-	--theme-blog-post-header-width: 1200px;
+  --theme-blog-post-header-width: 1200px;
 
-	/* Theme Fonts */
-	--theme-font-family-serif: 'Roboto Serif', Georgia, Cambria, 'Times New Roman',
-		Times, serif;
-	--theme-font-family-sans: 'Lato', -apple-system, BlinkMacSystemFont,
-		sans-serif;
+  /* Theme Fonts */
+  --theme-font-family-serif: "Roboto Serif", Georgia, Cambria,
+    "Times New Roman", Times, serif;
+  --theme-font-family-sans: "Lato", -apple-system, BlinkMacSystemFont, sans-serif;
 }
 ```
 
@@ -94,13 +93,12 @@ Sometimes you want the animations to be consistent, especially on hover effects.
 
 - `--section-margin` - The default top and bottom margin between sections
 - `--theme-grid-gap` - The default gap between items in a grid of cards, images, etc.
--	`--container-max-width` - The default container max width for content
--	`--container-max-width-narrow` - The narrow container max width for content
--	`--container-padding` - The default gutter padding on the container
+- `--container-max-width` - The default container max width for content
+- `--container-max-width-narrow` - The narrow container max width for content
+- `--container-padding` - The default gutter padding on the container
 
 ## Custom Font(s)
 
 1. Edit the Google Fonts import URL found in the `BaseHead.astro` file in the `src/components/head/` folder.
 
 2. Update your font stack with the `--theme-font-family-serif` and `--theme-font-family-sans` custom properties.
-

@@ -1,5 +1,5 @@
 ---
-const {post} = Astro.props;
+const { post } = Astro.props;
 ---
 
 <li class="blog-post__preview">
@@ -10,22 +10,21 @@ const {post} = Astro.props;
   </a>
 </li>
 
-
 <style>
-.blog-post__preview img {
-  margin-bottom: 1rem;
-  border-radius: calc(var(--theme-shape-radius) /2);
-  transition: border-radius var(--theme-transition);
-}
-.blog-post__preview:hover img {
-  border-radius: var(--theme-shape-radius);
-}
-.blog-post__preview a {
-  display: block;
-  text-decoration: none;
-  color: inherit;
-}
-.blog-post__preview h3 {
-  margin: 0;
-}
-</style> 
+  .blog-post__preview img {
+    margin-bottom: 1rem;
+    border-radius: calc(var(--theme-shape-radius) / 2);
+    transition: border-radius var(--theme-transition);
+  }
+  .blog-post__preview:hover img {
+    border-radius: var(--theme-shape-radius);
+  }
+  .blog-post__preview a {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+  }
+  .blog-post__preview h3 {
+    margin: 0;
+  }
+</style>

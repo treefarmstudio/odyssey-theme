@@ -7,11 +7,11 @@
 		"url": "git@github.com:littlesticksdev/odyssey-theme"
 	},
 	"scripts": {
-		"dev": "astro dev",
-		"start": "astro dev",
 		"build": "astro build",
+		"dev": "astro dev",
+		"format": "npx prettier -w .",
 		"preview": "astro preview",
-		"format": "npx prettier -w ."
+		"start": "astro dev"
 	},
 	"devDependencies": {
 		"@astrojs/mdx": "^0.8.2",

@@ -1,19 +1,22 @@
 ---
-import Container from '../core/Container.astro';
+import Container from "../core/Container.astro";
 
-const {surfaceNumber = 1} = Astro.props;
+const { surfaceNumber = 1 } = Astro.props;
 ---
 
-<section class="constrained-text-hero__section" style={`background-color: var(--theme-surface-${surfaceNumber});`}>
+<section
+  class="constrained-text-hero__section"
+  style={`background-color: var(--theme-surface-${surfaceNumber});`}
+>
   <Container narrow>
-    <slot></slot>
+    <slot />
   </Container>
 </section>
 
 <style>
-.constrained-text-hero__section {
-  margin: var(--section-margin) auto;
-  padding: clamp(10vh, 12vh, 18vh) 2rem;
-  border-radius: var(--theme-shape-radius);
-}
+  .constrained-text-hero__section {
+    margin: var(--section-margin) auto;
+    padding: clamp(10vh, 12vh, 18vh) 2rem;
+    border-radius: var(--theme-shape-radius);
+  }
 </style>

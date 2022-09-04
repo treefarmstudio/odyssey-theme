@@ -1,5 +1,5 @@
 ---
-const { label, name, options, required} = Astro.props;
+const { label, name, options, required } = Astro.props;
 ---
 
 <style>
@@ -24,10 +24,6 @@ const { label, name, options, required} = Astro.props;
   {label && <label for={name}>{label}</label>}
   <select name={name}>
     <option disabled selected value="">==SELECT AN OPTION==</option>
-    {options?.map((option) => (
-          <option value={option}>{option}</option>
-        ))}
+    {options?.map((option) => <option value={option}>{option}</option>)}
   </select>
 </div>
-
-

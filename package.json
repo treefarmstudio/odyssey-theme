@@ -1,14 +1,16 @@
 {
-	"name": "odyssey-theme",
-	"version": "1.0.0",
-	"private": false,
-	"scripts": {
-		"dev": "astro dev",
-		"start": "astro dev",
-		"build": "astro build",
-		"preview": "astro preview",
-		"format": "npx prettier -w ."
-	},
-	"devDependencies": {
-	}
+  "name": "odyssey-theme",
+  "version": "1.0.0",
+  "private": false,
+  "scripts": {
+    "build": "astro build",
+    "dev": "astro dev",
+    "format": "prettier --plugin-search-dir=./ -w ./",
+    "preview": "astro preview",
+    "start": "astro dev"
+  },
+  "devDependencies": {
+    "prettier": "^2.7.1",
+    "prettier-plugin-astro": "^0.5.4"
+  }
 }

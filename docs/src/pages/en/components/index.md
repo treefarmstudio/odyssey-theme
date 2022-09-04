@@ -7,10 +7,12 @@ layout: ../../../layouts/MainLayout.astro
 Here is a list of all Odyssey Theme's components
 
 ## Blog Components
+
 - [BlogPostPreview](/en/components/blog#blogpostpreview)
 - [BlogPostsList](/en/components/blog#blogpostslist)
 
 ## Core Components
+
 - Button
 - Container
 - Footer
@@ -19,16 +21,19 @@ Here is a list of all Odyssey Theme's components
 - SkipLink
 
 ## Feature Components
+
 - AnnouncementBar
 - FeatureCard
 - YouTubeEmbed
 
 ## Form Components
+
 - FormInput
 - FormSelect
 - FormTextarea
 
 ## Section Components
+
 - CtaCardSection
 - CustomerQuoteSection
 - StickyTextImageSection

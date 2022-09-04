@@ -6,7 +6,6 @@ import Logo from '../components/Logo.astro';
 import settings from '../config/settings';
 import { footerLists, footerSocials } from '../config/footer';
 
-
 export interface Props {
 	seo?: BaseHeadProps;
 }
@@ -31,7 +30,7 @@ const { seo } = Astro.props as Props;
 		background="var(--theme-surface-1)"
 		color="var(--theme-on-surface-1)"
 		footerLists={footerLists}
-    footerSocials={footerSocials}
+		footerSocials={footerSocials}
 		copyrightName={settings.name}
 	>
 		<Logo slot="logo" />

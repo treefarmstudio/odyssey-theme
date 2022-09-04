@@ -6,7 +6,6 @@ layout: ../../../layouts/MainLayout.astro
 
 After you've had some time to familiarize yourself with the the theme files you're probably wondering "How do I make it my own?" This guide will help you swap out titles, descriptions, logos, etc.
 
-
 ## Global SEO
 
 In the theme files you'll find a `settings.js` file under the `src/config/` folder. The contents of the file should look something like this:
@@ -18,7 +17,7 @@ export default {
   url: `https://odyssey-theme.littlesticks.dev`, // No trailing slash!
   name: `Odyssey`, // The short name of the business or brand name. Used for things like the copyright in the footer.
   enableThemeSwitcher: true,
-};  
+};
 ```
 
 The title and description fields here are used as the global defaults if one is not provided at the page level.
@@ -74,20 +73,20 @@ It will look something like this:
 ```js
 export const nav = [
   {
-    title: 'Home',
-    slug: '/',
+    title: "Home",
+    slug: "/",
   },
   {
-    title: 'Blog',
-    slug: '/blog',
+    title: "Blog",
+    slug: "/blog",
   },
   {
-    title: 'About',
-    slug: '/company/about',
+    title: "About",
+    slug: "/company/about",
   },
   {
-    title: 'Contact',
-    slug: '/company/contact',
+    title: "Contact",
+    slug: "/company/contact",
   },
 ];
 ```
@@ -103,19 +102,19 @@ The social links list will look something like this.
 ```js
 export const footerSocials = [
   {
-    url: 'https://instagram.com/',
+    url: "https://instagram.com/",
     icon: instagramIcon,
   },
   {
-    url: 'https://youtube.com/',
+    url: "https://youtube.com/",
     icon: youtubeIcon,
   },
   {
-    url: 'https://twitter.com/littlesticksdev',
+    url: "https://twitter.com/littlesticksdev",
     icon: twitterIcon,
   },
   {
-    url: 'https://github.com/littlesticksdev/odyssey-theme',
+    url: "https://github.com/littlesticksdev/odyssey-theme",
     icon: githubIcon,
   },
 ];
@@ -151,23 +150,22 @@ The title is the non-clickable title of the list and the nested items array is t
 
 ## Sitemap
 
-Odyssey Theme will automatically generate a `sitemap.xml` file for you using Astro's `@astrojs/sitemap` integration. 
+Odyssey Theme will automatically generate a `sitemap.xml` file for you using Astro's `@astrojs/sitemap` integration.
 
 To setup the sitemap with the correct URLs you will need to open the `astro.config.mjs` at the base level of the theme files which should look something like this
 
 ```js
-import { defineConfig } from 'astro/config';
-import lit from '@astrojs/lit';
+import { defineConfig } from "astro/config";
+import lit from "@astrojs/lit";
 import sitemap from "@astrojs/sitemap";
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://odyssey-theme.littlesticks.dev/',
+  site: "https://odyssey-theme.littlesticks.dev/",
   // Your public domain, e.g.: https://my-site.dev/. Used to generate sitemaps and canonical URLs.
   sitemap: true,
   // Generate sitemap (set to "false" to disable)
-  integrations: [lit(), sitemap()] // Add renderers to the config
-
+  integrations: [lit(), sitemap()], // Add renderers to the config
 });
 ```
 

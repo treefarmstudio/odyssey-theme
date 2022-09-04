@@ -1,9 +1,9 @@
 ---
-const {narrow} = Astro.props;
+const { narrow } = Astro.props;
 ---
 
 <div class={`content__container ${narrow ? `content__container--narrow` : ``}`}>
-  <slot></slot>
+  <slot />
 </div>
 
 <style>

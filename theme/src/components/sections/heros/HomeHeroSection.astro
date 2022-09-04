@@ -4,36 +4,36 @@ import settings from '../../../config/settings.js';
 ---
 
 <script>
-  import '../../theme-switcher/theme-switcher.ts';
+	import '../../theme-switcher/theme-switcher.ts';
 </script>
 
 <Container>
 	<section class="hero-section__section">
 		<div class="hero-section__text">
-				<h1>Welcome to Odyssey</h1>
-				<p>
-					A marketing website theme built with <a
-						href="https://astro.build"
-						target="_blank"
-						rel="noreferrer">Astro</a
-					> and carefully crafted for startups and businesses.
-				</p>
-				<div class="hero-btns__container">
-					<Button href="/theme/get-started" materialIcon="chevron_right"
-						>Get Started</Button
-					>
-					<Button href="/theme/style-guide" unelevated>Style Guide</Button>
-				</div>
-        {settings.enableThemeSwitcher && <theme-switcher></theme-switcher>}
+			<h1>Welcome to Odyssey</h1>
+			<p>
+				A marketing website theme built with <a
+					href="https://astro.build"
+					target="_blank"
+					rel="noreferrer">Astro</a
+				> and carefully crafted for startups and businesses.
+			</p>
+			<div class="hero-btns__container">
+				<Button href="/theme/get-started" materialIcon="chevron_right"
+					>Get Started</Button
+				>
+				<Button href="/theme/style-guide" unelevated>Style Guide</Button>
+			</div>
+			{settings.enableThemeSwitcher && <theme-switcher />}
 		</div>
 		<div class="hero-section__image">
-				<picture>
-					<img
-						src="/assets/images/home/classic-hero.jpg"
-						alt="Astro Odyssey"
-						id="home-hero-image"
-					/>
-				</picture>
+			<picture>
+				<img
+					src="/assets/images/home/classic-hero.jpg"
+					alt="Astro Odyssey"
+					id="home-hero-image"
+				/>
+			</picture>
 		</div>
 	</section>
 </Container>

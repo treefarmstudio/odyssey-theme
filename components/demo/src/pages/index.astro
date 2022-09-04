@@ -1,13 +1,13 @@
 ---
-import FeatureCard from '../../../packages/components/cards/FeatureCard.astro';
+import FeatureCard from "../../../packages/components/cards/FeatureCard.astro";
 ---
 
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width" />
-		<title>Welcome to Astro</title>
-		
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Welcome to Astro</title>
+
     <link rel="preload" as="style" href="/styles/index.css" />
 
     <!-- Google Fonts -->
@@ -28,9 +28,13 @@ import FeatureCard from '../../../packages/components/cards/FeatureCard.astro';
     </noscript>
 
     <link rel="stylesheet" href="/styles/index.css" />
-	</head>
+  </head>
 
-	<body>
-    <FeatureCard href="/company/legal" imgSrc="/assets/images/placeholder-screenshot.png" title="Legal Page" />
-	</body>
+  <body>
+    <FeatureCard
+      href="/company/legal"
+      imgSrc="/assets/images/placeholder-screenshot.png"
+      title="Legal Page"
+    />
+  </body>
 </html>

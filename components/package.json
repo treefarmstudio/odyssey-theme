@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "private": false,
   "scripts": {
-    "start": "astro --root demo dev",
     "build": "astro --root demo build",
-    "serve": "astro --root demo preview"
+    "serve": "astro --root demo preview",
+    "start": "astro --root demo dev"
   },
   "devDependencies": {
     "astro": "^1.0.2"

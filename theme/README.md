@@ -28,7 +28,7 @@ Visit the [Odyssey Theme Documentation](https://odyssey-theme-docs.littlesticks.
 
 ## Installation & Setup
 
-### Remote IDEs 
+### Remote IDEs
 
 <p>
   <a href="https://stackblitz.com/github/littlesticksdev/odyssey-theme/tree/main/theme">

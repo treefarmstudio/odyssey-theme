@@ -1,22 +1,25 @@
 ---
-import Container from '../core/Container.astro';
+import Container from "../core/Container.astro";
 
-const {reversed} = Astro.props;
+const { reversed } = Astro.props;
 ---
 
 <Container>
-  <section class={`sticky-text-image__section ${reversed && `sticky-text-image__section--reversed`}`}>
+  <section
+    class={`sticky-text-image__section ${
+      reversed && `sticky-text-image__section--reversed`
+    }`}
+  >
     <div class="sticky-text-image__text">
-      <slot name="text-container"></slot>
+      <slot name="text-container" />
     </div>
     <div class="sticky-text-image__image">
-      <slot name="image-container"></slot>
+      <slot name="image-container" />
     </div>
   </section>
 </Container>
 
-
-  <style>
+<style>
   .sticky-text-image__section {
     margin: calc(var(--section-margin) * 2) auto;
     display: grid;
