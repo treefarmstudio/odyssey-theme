@@ -2,6 +2,8 @@
 import settings from '../../config/settings.js';
 import ThemeProvider from '../theme-switcher/ThemeProvider.astro';
 
+import '../../styles/index.css';
+
 export interface Props {
 	title?: string;
 	description?: string;
@@ -19,15 +21,13 @@ const image = new URL(Astro.props.image || './social.png', Astro.site);
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width" />
 <link rel="icon" type="image/png" href="/favicon.png" />
-
-<link rel="preload" as="style" href="/styles/index.css" />
-
 <!-- Primary Meta Tags -->
 <title>{title}</title>
 <meta name="title" content={title} />
 <meta name="description" content={description} />
 <link rel="canonical" href={canonicalURL} />
-
+<!-- Generator -->
+<meta name="generator" content={Astro.generator} />
 <!-- Open Graph / Facebook -->
 <meta property="og:type" content="website" />
 <meta property="og:url" content={canonicalURL} />
@@ -70,8 +70,6 @@ const image = new URL(Astro.props.image || './social.png', Astro.site);
 		type="text/css"
 	/>
 </noscript>
-
-<link rel="stylesheet" href="/styles/index.css" />
 
 <!-- For Demonstration of the themes -->
 {settings.enableThemeSwitcher && <ThemeProvider />}
