@@ -37,12 +37,12 @@ Visit the [Odyssey Theme Documentation](https://odyssey-theme-docs.littlesticks.
 </p>
 <p>
   <a href="https://codesandbox.io/s/github/littlesticksdev/odyssey-theme/tree/main/theme">
-  <img src="https://astro.new/open-in-codesandbox.svg" height="36px" />
+  <img src="https://odyssey-theme.littlesticks.dev/assets/images/badges/open-in-codesandbox.svg" height="36px" />
   </a>
 </p>
 <p>
   <a href="https://gitpod.io/#https://github.com/littlesticksdev/odyssey-theme/tree/main/theme">
-  <img src="https://astro.new/open-in-gitpod.svg" height="36px" />
+  <img src="https://odyssey-theme.littlesticks.dev/assets/images/badges/open-in-gitpod.svg" height="36px" />
   </a>
 </p>
 
