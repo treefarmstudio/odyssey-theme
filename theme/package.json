@@ -14,6 +14,7 @@
 		"format": "npx prettier -w ."
 	},
 	"devDependencies": {
+		"@astrojs/image": "^0.6.0",
 		"@astrojs/mdx": "^0.8.2",
 		"@astrojs/sitemap": "^0.1.0",
 		"@odyssey-theme/components": "^0.1.67",
