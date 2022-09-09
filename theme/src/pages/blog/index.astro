@@ -1,0 +1,56 @@
+---
+import { parse, isBefore } from 'date-fns';
+import {
+	Container,
+	TextCardSection,
+	BlogPostsList,
+} from '@littlesticks/odyssey-theme-components';
+import Layout from '../../layouts/Page.astro';
+import NewsletterForm from '../../components/forms/NewsletterForm.astro';
+
+const posts = await Astro.glob('./posts/*.mdx').then(posts =>
+	posts
+		.map(({ frontmatter, url }) => ({
+			title: frontmatter.title,
+			description: frontmatter.description,
+			authors: frontmatter.authors,
+			publishDate: parse(frontmatter.publishDate, 'MMMM d, yyyy', new Date()),
+			featuredImage: frontmatter.featuredImage,
+			excerpt: frontmatter.excerpt,
+			href: url,
+		}))
+		.sort((a, b) => {
+			if (isBefore(a.publishDate, b.publishDate)) return 1;
+			if (isBefore(b.publishDate, a.publishDate)) return -1;
+			return 0;
+		})
+);
+
+const seo = {
+	title: 'Blog | Astro Odyssey Theme',
+	description: 'Astro Odyssey Theme Blog Page',
+};
+---
+
+<Layout {seo}>
+	<Container>
+		<TextCardSection>
+			<h1>Oydssey Blog</h1>
+			<p>
+				View our blog to stay up to date on the latest news about our business.
+				Want to be the first to hear about a new blog post? Join our newsletter!
+			</p>
+			<NewsletterForm />
+		</TextCardSection>
+		<section class="blog-posts-list__section">
+			<h2>Recent Posts</h2>
+			<BlogPostsList posts={posts} />
+		</section>
+	</Container>
+</Layout>
+
+<style>
+	.blog-posts-list__section {
+		margin: var(--section-margin) auto;
+	}
+</style>
