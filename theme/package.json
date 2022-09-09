@@ -18,7 +18,7 @@
 		"@astrojs/mdx": "^0.8.2",
 		"@astrojs/sitemap": "^0.1.0",
 		"@odyssey-theme/components": "^0.1.67",
-		"astro": "^1.0.2",
+		"astro": "^1.1.7",
 		"date-fns": "^2.28.0",
 		"lit": "^2.2.8",
 		"prettier-plugin-astro": "^0.0.12"
