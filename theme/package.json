@@ -15,12 +15,14 @@
 	},
 	"devDependencies": {
 		"@astrojs/image": "^0.6.0",
+		"@astrojs/lit": "^1.0.1",
 		"@astrojs/mdx": "^0.8.2",
 		"@astrojs/sitemap": "^0.1.0",
 		"@odyssey-theme/components": "^0.1.67",
+		"@webcomponents/template-shadowroot": "^0.1.0",
 		"astro": "^1.1.7",
 		"date-fns": "^2.28.0",
-		"lit": "^2.2.8",
+		"lit": "^2.3.1",
 		"prettier-plugin-astro": "^0.0.12"
 	}
 }
