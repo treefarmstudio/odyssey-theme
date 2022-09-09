@@ -8,7 +8,7 @@ const {href, imgSrc, title} = Astro.props;
       <h3 class="feature-card__title">{title}</h3>
       <picture>
         <source srcset={`${imgSrc}.webp`} type="image/webp" />
-        <img class="feature-card__img" src={`${imgSrc}.png`} />
+        <img class="feature-card__img" src={`${imgSrc}.png`} alt={title} loading="lazy" decoding="async" />
       </picture>
     </div>
   </a>
