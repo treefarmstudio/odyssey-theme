@@ -63,18 +63,6 @@
        url('/assets/fonts/lato-v23-latin-700italic.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
        url('/assets/fonts/lato-v23-latin-700italic.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
-
-@font-face {
-  font-family: 'Material Icons';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: local('Material Icons'),
-    local('MaterialIcons-Regular'),
-    url('/assets/fonts/MaterialIcons-Regular.woff2') format('woff2'),
-    url('/assets/fonts/MaterialIcons-Regular.woff') format('woff'),
-}
-
 :root {
   --font-size-sm: clamp(14.4px, 0.07vw + 14.13px, 15px);
   --font-size-base: clamp(18px, 0.23vw + 17.09px, 20px);
@@ -143,22 +131,4 @@ blockquote {
 	margin-bottom: 1rem;
 	padding-left: 1.5rem;
 	border-left: 0.25rem solid var(--theme-on-bg);
-}
-
-/* For Material Icons */
-
-.material-icons {
-  font-family: 'Material Icons';
-  font-weight: normal;
-  font-style: normal;
-  font-size: 24px;
-  line-height: 1;
-  letter-spacing: normal;
-  text-transform: none;
-  display: inline-block;
-  white-space: nowrap;
-  word-wrap: normal;
-  direction: ltr;
-  -webkit-font-feature-settings: 'liga';
-  -webkit-font-smoothing: antialiased;
 }
