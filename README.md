@@ -7,8 +7,8 @@
 # Odyssey Theme
 
 > **Warning**
-> Major changes are coming to this theme in v2.0.0. It'll be much more optimized (100s in Lighthouse), components will no longer be a separate package,
-> docs will be in the site itself instead of a separate website, there will be new components, landing page templates, and more. Be sure to star the repo > so you're the first to know about the major update.
+> Major changes are coming to this theme in v2.0.0. It'll be much more optimized (100s in Lighthouse), components will be moved to a new package name,
+> docs will be in the site itself instead of a separate website, there will be new components, landing page templates, and more. Be sure to star the repo so you're the first to know about the major update!
 
 This is the repo for the Odyssey Theme, a modern theme/starter for a business or startup's marketing website. It provides landing page examples, a full-featured blog, contact forms, and more. It is also fully theme-able to match your business' branding and style. It even includes a theme switcher component to show how easily the entire style of the site can be changed with only a few lines of CSS.
 
