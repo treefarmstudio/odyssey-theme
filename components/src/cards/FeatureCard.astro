@@ -6,7 +6,7 @@ const {href, title} = Astro.props;
   <a class="feature-card__link" href={href}>
     <div class="featured-card__content">
       <h3 class="feature-card__title">{title}</h3>
-      <slot name="image" /> 
+      <slot/> 
     </div>
   </a>
 </div> 
@@ -32,17 +32,16 @@ const {href, title} = Astro.props;
   .feature-card__card :global(img) {
     --image-shadow: 0 -0.5rem 1rem rgba(138, 138, 138, 0.12);
     margin: 0 auto;
-    width: 60%;
-    height: 100%;
+    max-width: clamp(60%, 70%, 390px);
+    height: auto;
     object-fit: cover;
     /* border-radius: 1rem 1rem 0 0; */
     box-shadow: var(--image-shadow);
-    transform: translateY(0.5rem);
     transition: transform var(--theme-transition);
   }
-  .feature-card__link:hover :global(img) {
-    transform: translateY(0);
-  }
+  /* .feature-card__card:hover :global(img) {
+    transform: translateY(-0.5rem);
+  } */
   .feature-card__title {
     font-family: var(--theme-font-family-sans);
   }
