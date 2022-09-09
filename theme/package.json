@@ -18,7 +18,7 @@
 		"@astrojs/lit": "^1.0.1",
 		"@astrojs/mdx": "^0.8.2",
 		"@astrojs/sitemap": "^0.1.0",
-		"@littlesticks/odyssey-theme-components": "^0.0.1",
+		"@littlesticks/odyssey-theme-components": "^0.0.3",
 		"@webcomponents/template-shadowroot": "^0.1.0",
 		"astro": "^1.1.8",
 		"date-fns": "^2.28.0",
