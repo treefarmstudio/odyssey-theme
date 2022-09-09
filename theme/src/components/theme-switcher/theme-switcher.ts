@@ -9,7 +9,33 @@ import {
 	orangeThemeIcon,
 } from './icons';
 
-export const tagName = 'theme-switcher';
+const themes = [
+  {
+    name: 'default',
+    icon: classicThemeIcon,
+    label: 'Classic',
+  },
+  {
+    name: 'dark',
+    icon: darkThemeIcon,
+    label: 'Dark',
+  },
+  {
+    name: 'earth',
+    icon: earthThemeIcon,
+    label: 'Earth',
+  },
+  {
+    name: 'ocean',
+    icon: blueThemeIcon,
+    label: 'Ocean',
+  },
+  {
+    name: 'sand',
+    icon: orangeThemeIcon,
+    label: 'Sand',
+  }
+]
 
 @customElement('theme-switcher')
 export class ThemeSwitcher extends LitElement {
@@ -78,7 +104,6 @@ export class ThemeSwitcher extends LitElement {
 	disconnectedCallback() {
 		super.disconnectedCallback();
 	}
-
 	private _setTheme(theme) {
 		this._doc.setAttribute('data-theme', theme);
 		// if (theme === 'default') {
@@ -101,53 +126,23 @@ export class ThemeSwitcher extends LitElement {
 	}
 
 	render() {
+    const themeButtons = html`${themes.map((theme) => {
+      return html`
+      <div class="theme-select__container">
+        <button
+          @click=${() => this._setTheme(theme.name)}
+          ?active=${this.theme === theme.name}
+        >
+          ${theme.icon}
+        </button>
+        <p>${theme.label}</p>
+        </div>
+      `
+    })}`
+
 		return html`
 			<div class="theme-switcher__container">
-				<div class="theme-select__container">
-					<button
-						@click=${() => this._setTheme('default')}
-						?active=${this.theme === 'default'}
-					>
-						${classicThemeIcon}
-					</button>
-					<p>Classic</p>
-				</div>
-				<div class="theme-select__container">
-					<button
-						@click=${() => this._setTheme('dark')}
-						?active=${this.theme === 'dark'}
-					>
-						${darkThemeIcon}
-					</button>
-					<p>Dark</p>
-				</div>
-				<div class="theme-select__container">
-					<button
-						@click=${() => this._setTheme('earth')}
-						?active=${this.theme === 'earth'}
-					>
-						${earthThemeIcon}
-					</button>
-					<p>Earth</p>
-				</div>
-				<div class="theme-select__container">
-					<button
-						@click=${() => this._setTheme('ocean')}
-						?active=${this.theme === 'ocean'}
-					>
-						${blueThemeIcon}
-					</button>
-					<p>Ocean</p>
-				</div>
-				<div class="theme-select__container">
-					<button
-						@click=${() => this._setTheme('sand')}
-						?active=${this.theme === 'sand'}
-					>
-						${orangeThemeIcon}
-					</button>
-					<p>Sand</p>
-				</div>
+				${themeButtons}
 			</div>
 		`;
 	}
