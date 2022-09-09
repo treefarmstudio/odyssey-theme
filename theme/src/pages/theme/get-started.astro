@@ -1,4 +1,5 @@
 ---
+import {Icon} from 'astro-icon';
 import { Button, Container, TextCardSection } from '@littlesticks/odyssey-theme-components';
 import Layout from '../../layouts/Page.astro';
 
@@ -22,8 +23,12 @@ const seo = {
 					href="https://github.com/littlesticksdev/odyssey-theme"
 					outlined
 					newTab
-          materialIcon="launch"
-					>View Source
+          customIcon
+					>
+          View Source
+          <Fragment slot="icon">
+            <Icon name="ic:baseline-launch" />
+          </Fragment>
 				</Button>
 			</div>
 			<div class="code-buttons__container">

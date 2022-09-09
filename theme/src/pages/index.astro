@@ -1,6 +1,8 @@
 ---
-import { Container, FeatureCard } from '@littlesticks/odyssey-theme-components';
-import { Picture } from '@astrojs/image/components';
+import { Container} from '@littlesticks/odyssey-theme-components';
+
+import FeatureCard from '../components/FeatureCard.astro';
+
 import Layout from '../layouts/Page.astro';
 import HomeHeroSection from '../components/sections/heros/HomeHeroSection.astro';
 ---
@@ -15,26 +17,16 @@ import HomeHeroSection from '../components/sections/heros/HomeHeroSection.astro'
 				ad campaign.
 			</p>
 			<div class="feature-card__grid">
-				<FeatureCard href="/landing-pages/landing-1" title="Landing Page 1">
-					<Picture
-						
-						src={import('../images/home/screenshots/landing-1.png')}
-						widths={[200, 400, 800]}
-						sizes="(max-width: 800px) 100vw, 800px"
-						formats={['avif', 'png', 'webp']}
-						alt="My local image"
-					/>
-				</FeatureCard>
-				<FeatureCard href="/landing-pages/landing-2" title="Landing Page 2">
-					<Picture
-						
-						src={import('../images/home/screenshots/landing-2.png')}
-						widths={[200, 400, 800]}
-						sizes="(max-width: 800px) 100vw, 800px"
-						formats={['avif', 'png', 'webp']}
-						alt="My local image"
-					/>
-				</FeatureCard>
+				<FeatureCard
+					href="/landing-pages/landing-1"
+					imgSrc="/assets/images/home/screenshots/landing-1.png"
+					title="Landing Page 1"
+				/>
+				<FeatureCard
+					href="/landing-pages/landing-2"
+					imgSrc="/assets/images/home/screenshots/landing-2.png"
+					title="Landing Page 2"
+				/>
 			</div>
 		</section>
 	</Container>
@@ -47,63 +39,31 @@ import HomeHeroSection from '../components/sections/heros/HomeHeroSection.astro'
 				legal pages, blog posts, etc.
 			</p>
 			<div class="feature-card__grid">
-				<FeatureCard href="/company/about" title="About Page">
-					<Picture
-						
-						src={import('../images/home/screenshots/about.png')}
-						widths={[200, 400, 800]}
-						sizes="(max-width: 800px) 100vw, 800px"
-						formats={['avif', 'png', 'webp']}
-						alt="My local image"
-					/>
-				</FeatureCard>
-				<FeatureCard href="/company/contact" title="Contact Page">
-					<Picture
-						
-						src={import('../images/home/screenshots/contact.png')}
-						widths={[200, 400, 800]}
-						sizes="(max-width: 800px) 100vw, 800px"
-						formats={['avif', 'png', 'webp']}
-						alt="My local image"
-					/>
-				</FeatureCard>
-				<FeatureCard href="/blog/" title="Blog Page">
-					<Picture
-						
-						src={import('../images/home/screenshots/blog.png')}
-						widths={[200, 400, 800]}
-						sizes="(max-width: 800px) 100vw, 800px"
-						formats={['avif', 'png', 'webp']}
-						alt="My local image"
-					/>
-				</FeatureCard>
+				<FeatureCard
+					href="/company/about"
+					imgSrc="/assets/images/home/screenshots/about.png"
+					title="About Page"
+				/>
+				<FeatureCard
+					href="/company/contact"
+					imgSrc="/assets/images/home/screenshots/contact.png"
+					title="Contact Page"
+				/>
+				<FeatureCard
+					href="/blog/"
+					imgSrc="/assets/images/home/screenshots/blog.png"
+					title="Blog Page"
+				/>
 				<FeatureCard
 					href="/blog/posts/remote-work-mental-health"
+					imgSrc="/assets/images/home/screenshots/blog-post.png"
 					title="Blog Post"
-				>
-					<Picture
-						
-						src={import('../images/home/screenshots/blog-post.png')}
-						widths={[200, 400, 800]}
-						sizes="(max-width: 800px) 100vw, 800px"
-						formats={['avif', 'png', 'webp']}
-						alt="My local image"
-					/>
-				</FeatureCard>
+				/>
 				<FeatureCard
 					href="/company/legal"
-					imgSrc="/assets/images/home/screenshots/legal"
+					imgSrc="/assets/images/home/screenshots/legal.png"
 					title="Legal Page"
-				>
-					<Picture
-						
-						src={import('../images/home/screenshots/legal.png')}
-						widths={[200, 400, 800]}
-						sizes="(max-width: 800px) 100vw, 800px"
-						formats={['avif', 'png', 'webp']}
-						alt="My local image"
-					/>
-				</FeatureCard>
+				/>
 			</div>
 		</section>
 	</Container>
@@ -115,32 +75,14 @@ import HomeHeroSection from '../components/sections/heros/HomeHeroSection.astro'
 			<div class="feature-card__grid">
 				<FeatureCard
 					href="/theme/get-started"
-					imgSrc="/assets/images/home/screenshots/get-started"
+					imgSrc="/assets/images/home/screenshots/get-started.png"
 					title="Get Started"
-				>
-					<Picture
-						
-						src={import('../images/home/screenshots/get-started.png')}
-						widths={[200, 400, 800]}
-						sizes="(max-width: 800px) 100vw, 800px"
-						formats={['avif', 'png', 'webp']}
-						alt="My local image"
-					/>
-				</FeatureCard>
+				/>
 				<FeatureCard
 					href="/theme/style-guide"
-					imgSrc="/assets/images/home/screenshots/style-guide"
+					imgSrc="/assets/images/home/screenshots/style-guide.png"
 					title="Style Guide"
-				>
-					<Picture
-						
-						src={import('../images/home/screenshots/style-guide.png')}
-						widths={[200, 400, 800]}
-						sizes="(max-width: 800px) 100vw, 800px"
-						formats={['avif', 'png', 'webp']}
-						alt="My local image"
-					/>
-				</FeatureCard>
+				/>
 			</div>
 		</section>
 	</Container>

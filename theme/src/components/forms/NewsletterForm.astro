@@ -1,4 +1,5 @@
 ---
+import {Icon} from 'astro-icon'
 import {Button, FormInput } from "@littlesticks/odyssey-theme-components";
 
 ---
@@ -6,7 +7,11 @@ import {Button, FormInput } from "@littlesticks/odyssey-theme-components";
 <form name="Newsletter Form" method="POST" action="/newsletter-thank-you" data-netlify="true">
   <div class="newsletter-form__container">
     <FormInput name="Email" placeholder="hello@example.com"/>
-    <Button materialIcon="chevron_right">Submit</Button>
+    <Button customIcon>Submit
+      <Fragment slot="icon">
+        <Icon name="ic:baseline-chevron-right" />
+      </Fragment>
+    </Button>
   </div>
 </form>
 

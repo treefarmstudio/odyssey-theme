@@ -10,6 +10,10 @@ export default defineConfig({
   // Your public domain, e.g.: https://my-site.dev/. Used to generate sitemaps and canonical URLs.
   sitemap: true,
   // Generate sitemap (set to "false" to disable)
-  integrations: [sitemap(), mdx(), image(), lit()] // Add renderers to the config
-
+  integrations: [sitemap(), mdx(), image(), lit()], // Add renderers to the config
+  vite: {
+    ssr: {
+      external: ["svgo"],
+    },
+  },
 });

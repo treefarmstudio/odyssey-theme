@@ -1,4 +1,5 @@
 ---
+import {Icon} from 'astro-icon'
 import { Button, FormInput, FormSelect, FormTextarea } from '@littlesticks/odyssey-theme-components';
 
 const selectOptions = [
@@ -13,7 +14,11 @@ const selectOptions = [
   <FormInput type="text" label="First Name" name="First Name" placeholder="John" />
   <FormInput type="text" label="Last Name" name="Last Name" placeholder="Doe" />
   <FormInput type="email" label="Email" name="Email" placeholder="hello@example.com" />
-  <Button materialIcon="chevron_right">Submit</Button>
+  <Button customIcon>Submit
+    <Fragment slot="icon">
+      <Icon name="ic:baseline-chevron-right" />
+    </Fragment>
+  </Button>
 </form>
 
 <style>

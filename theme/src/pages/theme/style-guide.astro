@@ -1,4 +1,5 @@
 ---
+import {Icon} from 'astro-icon'
 import {
 	TextCardSection,
 	Container,
@@ -88,8 +89,12 @@ const selectOptions = ['Option 1', 'Option 2', 'Option 3'];
 				<p>
 					<Button outlined>Button 3</Button>
 				</p>
-				<p>Button With Material Icon</p>
-				<Button materialIcon="launch">Launch Page</Button>
+				<p>Button With Custom Icon</p>
+				<Button customIcon>Launch Page
+          <Fragment slot="icon">
+            <Icon name="ic:baseline-launch" />
+          </Fragment>
+        </Button>
 			</div>
 		</section>
 		<section class="style-guide__section">

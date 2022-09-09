@@ -1,4 +1,5 @@
 ---
+import {Icon} from 'astro-icon'
 import {
   AnnouncementBar,
 	Button,
@@ -25,8 +26,10 @@ const seo = {
 			<p>Use Odyssey Theme to jumpstart your company's marketing website.</p>
 		</div>
 		<div slot="btns-container">
-			<Button href="/theme/get-started" materialIcon="chevron_right"
-				>Get Started</Button
+			<Button href="/theme/get-started" customIcon
+				>Get Started <Fragment slot="icon">
+          <Icon name="ic:baseline-chevron-right"/>
+        </Fragment></Button
 			>
 		</div>
 		<picture slot="image-container">
@@ -114,7 +117,9 @@ const seo = {
   <CtaCardSection background="var(--theme-surface-2)" color="var(--theme-on-surface-2)">
     <h2>Start Your Website Today</h2>
     <p>It only takes a couple clicks to have a new, modern website for your business or startup.</p>
-    <Button href="/theme/get-started" materialIcon="chevron_right">Get Started</Button>
+    <Button href="/theme/get-started" customIcon>Get Started <Fragment slot="icon">
+      <Icon name="ic:baseline-chevron-right"/>
+    </Fragment></Button>
   </CtaCardSection>
 
 </Layout>

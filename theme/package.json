@@ -18,9 +18,10 @@
 		"@astrojs/lit": "^1.0.1",
 		"@astrojs/mdx": "^0.8.2",
 		"@astrojs/sitemap": "^0.1.0",
-		"@littlesticks/odyssey-theme-components": "^0.0.7",
+		"@littlesticks/odyssey-theme-components": "^0.0.10",
 		"@webcomponents/template-shadowroot": "^0.1.0",
 		"astro": "^1.1.8",
+		"astro-icon": "^0.7.3",
 		"date-fns": "^2.28.0",
 		"lit": "^2.3.1",
 		"prettier-plugin-astro": "^0.0.12"
