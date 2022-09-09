@@ -1,0 +1,4 @@
+[build]
+  base = "theme/"
+  publish = "dist/"
+  command = "npm run build"
