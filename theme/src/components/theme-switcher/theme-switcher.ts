@@ -132,6 +132,7 @@ export class ThemeSwitcher extends LitElement {
         <button
           @click=${() => this._setTheme(theme.name)}
           ?active=${this.theme === theme.name}
+          title=${`Enable ${theme.label} Theme`}
         >
           ${theme.icon}
         </button>
