@@ -6,7 +6,7 @@ const {href, imgSrc, title} = Astro.props;
   <a class="feature-card__link" href={href}>
     <div class="featured-card__content">
       <h3 class="feature-card__title">{title}</h3>
-      <img class="feature-card__img" src={imgSrc} alt={title} >
+      <img class="feature-card__img" src={imgSrc} alt={title} loading="lazy" width="780" height="585" >
     </div>
   </a>
 </div> 
@@ -32,7 +32,7 @@ const {href, imgSrc, title} = Astro.props;
   .feature-card__card .feature-card__img {
     --image-shadow: 0 -0.5rem 1rem rgba(138, 138, 138, 0.12);
     margin: 0 auto;
-    max-width: clamp(60%, 70%, 390px);
+    width: clamp(60%, 70%, 390px);
     height: auto;
     object-fit: cover;
     /* border-radius: 1rem 1rem 0 0; */
