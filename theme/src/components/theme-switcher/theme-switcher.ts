@@ -86,24 +86,22 @@ export class ThemeSwitcher extends LitElement {
 	// 	document.querySelector('#home-hero-image');
 
 	@property({ type: String })
-	theme: string = 'default';
+	theme: string | null = null;
 
 	private _getCurrentTheme() {
 		// check for a local storage theme first
 		const localStorageTheme = localStorage.getItem('theme');
 		if (localStorageTheme !== null) {
 			this._setTheme(localStorageTheme);
-		}
+		} else {
+      this._setTheme('default');
+    }
 	}
 
-	connectedCallback() {
-		super.connectedCallback();
-		this._getCurrentTheme();
-	}
+  firstUpdated() {
+    this._getCurrentTheme();
+  }
 
-	disconnectedCallback() {
-		super.disconnectedCallback();
-	}
 	private _setTheme(theme) {
 		this._doc.setAttribute('data-theme', theme);
 		// if (theme === 'default') {
