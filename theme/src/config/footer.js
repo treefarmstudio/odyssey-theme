@@ -1,22 +1,23 @@
-import { twitterIcon, youtubeIcon, githubIcon, instagramIcon } from "../icons/icons";
-
-
 export const footerSocials = [
   {
-    url: 'https://instagram.com/',
-    icon: instagramIcon,
-  },
-  {
-    url: 'https://youtube.com/',
-    icon: youtubeIcon,
-  },
-  {
+    name: 'Twitter',
     url: 'https://twitter.com/littlesticksdev',
-    icon: twitterIcon,
+    icon: "mdi:twitter",
   },
   {
-    url: 'https://github.com/littlesticksdev/odyssey-theme',
-    icon: githubIcon,
+    name: 'Youtube',
+    url: 'https://youtube.com/c/LittleSticks',
+    icon: "mdi:youtube",
+  },
+  {
+    name: 'Github',
+    url: 'https://twitter.com/littlesticks',
+    icon: "mdi:github",
+  },
+  {
+    name: 'Discord',
+    url: 'https://littlesticks.dev/discord',
+    icon: "ic:baseline-discord",
   },
 ]
 
