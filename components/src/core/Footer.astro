@@ -1,35 +1,52 @@
 ---
-import { Container } from "@littlesticks/odyssey-theme-components";
+import { Icon } from 'astro-icon';
+import { Container } from '@littlesticks/odyssey-theme-components';
 
-const { footerSocials, footerLists, copyrightName, background, color} = Astro.props;
+const { footerSocials, footerLists, copyrightName, background, color } =
+  Astro.props;
 ---
 
-<footer style={background && `--footer-bg:${background}; --footer-color:${color}`}>
+<footer
+  style={background && `--footer-bg:${background}; --footer-color:${color}`}
+>
   <Container>
-  <div class="footer-grid__container">
-    <div class="footer-brand__container">
-      <div>
-        <slot name="logo"></slot>
+    <div class="footer-grid__container">
+      <div class="footer-brand__container">
+        <div>
+          <slot name="logo" />
+        </div>
+        <ul class="footer-socials__list">
+          {
+            footerSocials.map((social) => (
+              <li class="footer-socials__item">
+                <a
+                  href={social.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="footer-socials__link"
+                  title={`Open ${social.name} profile`}
+                >
+                  <Icon name={social.icon} width="24px" height="24px" />
+                </a>
+              </li>
+            ))
+          }
+        </ul>
       </div>
-      <ul class="footer-socials__list">
-          {footerSocials.map(social => (
-            <li class="footer-socials__item">
-              <a href={social.url} target="_blank" rel="noopener noreferrer" class="footer-socials__link" set:html={social.icon}>                
-              </a>            
-            </li>
-          ))}
-      </ul>
-    </div>
-    {footerLists.map(list => (
-    <div>
-      <h6>{list.title}</h6>   
-      <ul class="footer-link__list">
-        {list.items.map(item => (
-          <li><a href={item.slug}>{item.title}</a></li>
-        ))}
-      </ul>
-    </div>
-    ))}
+      {
+        footerLists.map((list) => (
+          <div>
+            <h6>{list.title}</h6>
+            <ul class="footer-link__list">
+              {list.items.map((item) => (
+                <li>
+                  <a href={item.slug}>{item.title}</a>
+                </li>
+              ))}
+            </ul>
+          </div>
+        ))
+      }
     </div>
     <div class="footer-copyright__container">
       <p>Copyright &copy; {new Date().getFullYear()} {copyrightName}</p>
