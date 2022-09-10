@@ -11,6 +11,7 @@ export default defineConfig({
   sitemap: true,
   // Generate sitemap (set to "false" to disable)
   integrations: [sitemap(), mdx(), image(), lit()], // Add renderers to the config
+  // This is for the astro-icon package. You can find more about the package here: https://www.npmjs.com/package/astro-icon
   vite: {
     ssr: {
       external: ["svgo"],
