@@ -11,7 +11,7 @@ export const footerSocials = [
   },
   {
     name: 'Github',
-    url: 'https://twitter.com/littlesticks',
+    url: 'https://github.com/littlesticks',
     icon: "mdi:github",
   },
   {
@@ -32,6 +32,10 @@ export const footerLists = [
 			{
 				title: 'Landing Page 2',
 				slug: '/landing-pages/landing-2',
+			},
+      {
+				title: 'Landing Page 3',
+				slug: '/landing-pages/landing-3',
 			},
 		],
 	},
