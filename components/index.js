@@ -5,6 +5,7 @@ export { default as Header } from './core/Header.astro';
 export { default as Footer } from './core/Footer.astro';
 export { default as YouTubeEmbed } from './core/YouTubeEmbed.astro';
 export { default as AnnouncementBar } from './core/AnnouncementBar.astro';
+export { default as LittleSticksPlug} from './core/LittleSticksPlug.astro';
 
 // Buttons
 export { default as Button } from './buttons/Button.astro';

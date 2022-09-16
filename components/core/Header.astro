@@ -1,4 +1,5 @@
 ---
+import { Icon } from 'astro-icon'
 const { navData, rightMenu } = Astro.props;
 ---
 
@@ -6,14 +7,17 @@ const { navData, rightMenu } = Astro.props;
   const bodyElement = document.querySelector('body');
   const menuButton = document.querySelector('#menuButton')
   const navHeader = document.querySelector('#odysseyNavHeader');
-  const menuButtonIcon = document.querySelector('#menuButtonIcon');
+  const menuButtonIconHam = document.querySelector('#menuButtonIconHam');
+  const menuButtonIconClose = document.querySelector('#menuButtonIconClose');
   let scrollPosition = 0;
 
   menuButton.addEventListener('click', toggleMenu)
 
   function toggleMenu() {
+    menuButtonIconHam.toggleAttribute('hidden');
+    menuButtonIconClose.toggleAttribute('hidden');
+    
     if (navHeader.hasAttribute('mobile-menu-open', true)) {
-      menuButtonIcon.innerHTML = `menu`;
       // unlock scroll position
       bodyElement.style.removeProperty('overflow');
       bodyElement.style.removeProperty('position');
@@ -21,7 +25,6 @@ const { navData, rightMenu } = Astro.props;
       bodyElement.style.removeProperty('width');
       window.scrollTo(0, scrollPosition);
     } else {
-      menuButtonIcon.innerHTML = `close`;
       // lock scroll position
       scrollPosition = window.pageYOffset;
       bodyElement.style.overflow = 'hidden';
@@ -29,6 +32,7 @@ const { navData, rightMenu } = Astro.props;
       bodyElement.style.top = `-${scrollPosition}px`;
       bodyElement.style.width = '100%';
     }
+    
     navHeader.toggleAttribute('mobile-menu-open');
   }
 </script>  
@@ -36,7 +40,12 @@ const { navData, rightMenu } = Astro.props;
 <header id="odysseyNavHeader" class={`${rightMenu ? "header--right" : ``.trim()}`}>
   <div class="header-logo-menu__container">
   <button id="menuButton">
-    <span id="menuButtonIcon" class="material-icons">menu</span>
+    <span id="menuButtonIconHam">
+      <Icon name="ic:baseline-menu" width="24px" height="24px" />
+    </span>
+    <span id="menuButtonIconClose" hidden>
+      <Icon name="ic:baseline-close" width="24px" height="24px" />
+    </span>
   </button>
   <a class="header-logo__link" href="/">
     <slot name="logo">
@@ -94,7 +103,7 @@ const { navData, rightMenu } = Astro.props;
     cursor: pointer;
     -webkit-tap-highlight-color: transparent;
   }
-  #menuButton > span.material-icons {
+  #menuButton > span {
     color: var(--theme-on-bg);
     vertical-align: middle;
   }

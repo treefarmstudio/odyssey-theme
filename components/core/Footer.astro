@@ -1,8 +1,9 @@
 ---
 import { Icon } from 'astro-icon';
-import { Container } from '@littlesticks/odyssey-theme-components';
+import Container  from '../core/Container.astro';
+import LittleSticksPlug from './LittleSticksPlug.astro';
 
-const { footerSocials, footerLists, copyrightName, background, color } =
+const { footerSocials, footerLists, copyrightName, background, color, showLittleSticksPlug = true } =
   Astro.props;
 ---
 
@@ -50,7 +51,9 @@ const { footerSocials, footerLists, copyrightName, background, color } =
     </div>
     <div class="footer-copyright__container">
       <p>Copyright &copy; {new Date().getFullYear()} {copyrightName}</p>
+      {showLittleSticksPlug && <LittleSticksPlug/>}
     </div>
+
   </Container>
 </footer>
 
@@ -92,6 +95,10 @@ const { footerSocials, footerLists, copyrightName, background, color } =
   .footer-link__list li a:hover {
     opacity: 0.84;
   }
+  .footer-copyright__container {
+    display: flex;
+    justify-content: space-between;
+  }
   .footer-copyright__container p {
     font-size: var(--font-size-sm);
   }
@@ -110,6 +117,9 @@ const { footerSocials, footerLists, copyrightName, background, color } =
       padding: 5vh 0;
       grid-template-columns: 1fr;
       gap: 1rem;
+    }
+    .footer-copyright__container {
+      flex-direction: column;
     }
   }
 </style>
