@@ -4,8 +4,6 @@
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/9c5f2860-7adb-4b7d-91ad-9d13eda8bc46/deploy-status)](https://app.netlify.com/sites/odyssey-theme/deploys)
 
-![Github-sponsors](https://buy.stripe.com/9AQ3f202Jg2f9UcfYY)
-
 # Odyssey Theme
 
 Odyssey Theme is a modern theme/starter for a business or startup's marketing website. It provides landing page examples, a full-featured blog, contact forms, and more. It is fully themeable to match your business' branding and style. It even includes a theme switcher component to show how easily the entire style of the site can be changed with only a few lines of CSS.
@@ -76,6 +74,12 @@ npm start
 Feel free to deploy and host your site on your favorite static hosting service such as Netlify, Firebase Hosting, Vercel, GitHub Pages, etc.
 
 Astro has [an in-depth guide](https://docs.astro.build/en/guides/deploy/) on how to deploy an Astro project to each service.
+
+## Sponsor
+
+If you find this theme useful, please consider donating to support the development of it with the link below
+
+[Donate to Little Sticks](https://buy.stripe.com/9AQ3f202Jg2f9UcfYY)
 
 ## Support
 
