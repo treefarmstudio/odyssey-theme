@@ -1,4 +1,4 @@
-[![npm version](https://badge.fury.io/js/@odyssey-theme%2Fcomponents.svg)](https://badge.fury.io/js/@odyssey-theme%2Fcomponents)
+[![npm version](https://badge.fury.io/js/@littlesticks%2Fodyssey-theme-components.svg)](https://badge.fury.io/js/@littlesticks%2Fodyssey-theme-components)
 
 # Odyssey Theme Components
 
