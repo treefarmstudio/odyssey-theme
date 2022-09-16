@@ -1,0 +1,45 @@
+---
+import { Button, Container, TextCardSection } from '@littlesticks/odyssey-theme-components';
+import Layout from '../layouts/Page.astro';
+
+const seo = {
+	title: 'Get Started using the Astro Odyssey Theme',
+	description: 'Get started on how to setup and use this Astro theme.',
+};
+---
+
+<Layout {seo}>
+	<Container>
+		<TextCardSection>
+			<h1>404</h1>
+      <h2>Page Not Found 👀</h2>
+			<div class="cta-buttons__container">
+        <Button
+					href="/"
+					>
+          Return Home
+				</Button>
+			</div>
+		</TextCardSection>
+	</Container>
+</Layout>
+
+<style>
+	.cta-buttons__container {
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.cta-buttons__container :global(a) {
+    margin-right: 1rem;
+		margin-bottom: 1rem;
+	}
+	.code-buttons__container {
+		margin: 1rem auto;
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.code-buttons__container > a {
+		margin-right: 1rem;
+		margin-bottom: 1rem;
+	}
+</style>
