@@ -24,7 +24,8 @@ View a [live demo](https://odyssey-theme.littlesticks.dev/) of the Odyssey Theme
 
 ## Documentation
 
-Visit the [Odyssey Theme Documentation](https://odyssey-theme-docs.littlesticks.dev/en/introduction/) to learn more about how to customize the theme and use the components.
+1. View the [Theme Setup Guide](https://odyssey-theme.littlesticks.dev/theme/theme-setup)
+2. View the [Customizing the Theme Guide](https://odyssey-theme.littlesticks.dev/theme/customizing-odyssey)
 
 ## Installation & Setup
 
@@ -65,3 +66,9 @@ npm start
 Feel free to deploy and host your site on your favorite static hosting service such as Netlify, Firebase Hosting, Vercel, GitHub Pages, etc.
 
 Astro has [an in-depth guide](https://docs.astro.build/en/guides/deploy/) on how to deploy an Astro project to each service.
+
+## Support
+
+Please feel free to reach out to us on our Discord if you have questions or file an issue on the repo.
+
+[Join Little Sticks Discord](https://littlesticks.dev/discord)
