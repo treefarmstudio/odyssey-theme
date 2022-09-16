@@ -1,22 +1,23 @@
-import { twitterIcon, youtubeIcon, githubIcon, instagramIcon } from "../icons/icons";
-
-
 export const footerSocials = [
   {
-    url: 'https://instagram.com/',
-    icon: instagramIcon,
-  },
-  {
-    url: 'https://youtube.com/',
-    icon: youtubeIcon,
-  },
-  {
+    name: 'Twitter',
     url: 'https://twitter.com/littlesticksdev',
-    icon: twitterIcon,
+    icon: "mdi:twitter",
   },
   {
-    url: 'https://github.com/littlesticksdev/odyssey-theme',
-    icon: githubIcon,
+    name: 'Youtube',
+    url: 'https://youtube.com/c/LittleSticks',
+    icon: "mdi:youtube",
+  },
+  {
+    name: 'Github',
+    url: 'https://github.com/littlesticks',
+    icon: "mdi:github",
+  },
+  {
+    name: 'Discord',
+    url: 'https://littlesticks.dev/discord',
+    icon: "ic:baseline-discord",
   },
 ]
 
@@ -32,6 +33,10 @@ export const footerLists = [
 				title: 'Landing Page 2',
 				slug: '/landing-pages/landing-2',
 			},
+      // {
+			// 	title: 'Landing Page 3',
+			// 	slug: '/landing-pages/landing-3',
+			// },
 		],
 	},
 	{
@@ -62,6 +67,14 @@ export const footerLists = [
 				title: 'Style Guide',
 				slug: '/theme/style-guide',
 			},
+      {
+        title: 'Theme Setup',
+        slug: '/theme/theme-setup',
+      },
+      {
+        title: 'Customizing Odyssey',
+        slug: '/theme/customizing-odyssey',
+      }
 		],
 	},
 ];

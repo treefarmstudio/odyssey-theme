@@ -1,18 +1,14 @@
 <p align="center">
-  <img src="assets/readme-banner.png" alt="Odyssey Theme Banner">
+  <img src="assets/gh-banner.png" alt="Odyssey Theme Banner">
 </p>
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/9c5f2860-7adb-4b7d-91ad-9d13eda8bc46/deploy-status)](https://app.netlify.com/sites/odyssey-theme/deploys)
 
 # Odyssey Theme
 
-> **Warning**
-> Major changes are coming to this theme in v2.0.0. It'll be much more optimized (100s in Lighthouse), components will be moved to a new package name,
-> docs will be in the site itself instead of a separate website, there will be new components, landing page templates, and more. Be sure to star the repo so you're the first to know about the major update!
+Odyssey Theme is a modern theme/starter for a business or startup's marketing website. It provides landing page examples, a full-featured blog, contact forms, and more. It is fully themeable to match your business' branding and style. It even includes a theme switcher component to show how easily the entire style of the site can be changed with only a few lines of CSS.
 
-This is the repo for the Odyssey Theme, a modern theme/starter for a business or startup's marketing website. It provides landing page examples, a full-featured blog, contact forms, and more. It is also fully theme-able to match your business' branding and style. It even includes a theme switcher component to show how easily the entire style of the site can be changed with only a few lines of CSS.
-
-Some of its features includes but is not limited to:
+## Features
 
 - ✅ **A Full Featured Blog with Tagging**
 - ✅ **Fully theme-able styles with for buttons, shapes, backgrounds, surfaces, etc.**
@@ -28,9 +24,10 @@ View a [live demo](https://odyssey-theme.littlesticks.dev/) of the Odyssey Theme
 
 ## Documentation
 
-Visit the [Odyssey Theme Documentation](https://odyssey-theme-docs.littlesticks.dev/en/introduction/) to learn more about how to customize the theme and use the components.
+1. View the [Theme Setup Guide](https://odyssey-theme.littlesticks.dev/theme/theme-setup)
+2. View the [Customizing the Theme Guide](https://odyssey-theme.littlesticks.dev/theme/customizing-odyssey)
 
-## Installation & Setup
+## Usage
 
 ### Remote IDEs 
 
@@ -69,3 +66,9 @@ npm start
 Feel free to deploy and host your site on your favorite static hosting service such as Netlify, Firebase Hosting, Vercel, GitHub Pages, etc.
 
 Astro has [an in-depth guide](https://docs.astro.build/en/guides/deploy/) on how to deploy an Astro project to each service.
+
+## Support
+
+Please feel free to reach out to us on our Discord if you have questions or file an issue on the repo.
+
+[Join Little Sticks Discord](https://littlesticks.dev/discord)

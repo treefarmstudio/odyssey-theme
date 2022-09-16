@@ -1,11 +1,9 @@
 ---
-import { Container, Button } from '@odyssey-theme/components';
+import { Icon } from 'astro-icon';
+import { Container, Button } from '@littlesticks/odyssey-theme-components';
 import settings from '../../../config/settings.js';
+import {ThemeSwitcher} from '../../theme-switcher/theme-switcher';
 ---
-
-<script>
-  import '../../theme-switcher/theme-switcher.ts';
-</script>
 
 <Container>
 	<section class="hero-section__section">
@@ -19,12 +17,16 @@ import settings from '../../../config/settings.js';
 					> and carefully crafted for startups and businesses.
 				</p>
 				<div class="hero-btns__container">
-					<Button href="/theme/get-started" materialIcon="chevron_right"
-						>Get Started</Button
+					<Button href="/theme/get-started" customIcon
+						>Get Started
+            <Fragment slot="icon">
+              <Icon name="ic:baseline-chevron-right"/>
+            </Fragment>
+            </Button
 					>
 					<Button href="/theme/style-guide" unelevated>Style Guide</Button>
 				</div>
-        {settings.enableThemeSwitcher && <theme-switcher></theme-switcher>}
+        {settings.enableThemeSwitcher && <ThemeSwitcher client:load/>}
 		</div>
 		<div class="hero-section__image">
 				<picture>

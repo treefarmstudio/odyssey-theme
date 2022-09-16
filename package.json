@@ -1,14 +1,16 @@
 {
 	"name": "odyssey-theme",
-	"version": "1.0.0",
+	"version": "2.0.0",
 	"private": false,
+	"repository": {
+		"type": "git",
+		"url": "git@github.com:littlesticksdev/odyssey-theme"
+	},
 	"scripts": {
 		"dev": "astro dev",
 		"start": "astro dev",
 		"build": "astro build",
 		"preview": "astro preview",
 		"format": "npx prettier -w ."
-	},
-	"devDependencies": {
 	}
 }

@@ -42,35 +42,6 @@ const image = new URL(Astro.props.image || './social.png', Astro.site);
 <meta property="twitter:description" content={description} />
 <meta property="twitter:image" content={image} />
 
-<!-- Google Fonts -->
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link
-	rel="preload"
-	href="https://fonts.googleapis.com/css2?family=Roboto+Serif:wght@600..700&family=Lato:wght@300..700&display=swap"
-	as="style"
-	onload="this.onload=null;this.rel='stylesheet'"
-/>
-<link
-	rel="preload"
-	href="https://fonts.googleapis.com/icon?family=Material+Icons"
-	as="style"
-	onload="this.onload=null;this.rel='stylesheet'"
-/>
-
-<noscript>
-	<link
-		href="https://fonts.googleapis.com/css2?family=Roboto+Serif:wght@600..700&family=Lato:wght@300..700&display=swap"
-		rel="stylesheet"
-		type="text/css"
-	/>
-	<link
-		href="https://fonts.googleapis.com/icon?family=Material+Icons"
-		rel="stylesheet"
-		type="text/css"
-	/>
-</noscript>
-
 <!-- For Demonstration of the themes -->
 {settings.enableThemeSwitcher && <ThemeProvider />}
 

@@ -1,0 +1,73 @@
+---
+const { href, unelevated, outlined, customIcon, onPrimary, newTab } =
+  Astro.props;
+
+const Tag = href ? 'a' : 'button';
+---
+
+<Tag
+  class={`btn ${unelevated && `btn--unelevated`} ${
+    outlined && `btn--outlined`
+  } ${onPrimary && `btn--on-primary`}`}
+  href={href}
+  target={`${newTab ? '_blank': ``}`}
+  rel={`${newTab ? 'noopener noreferrer' : ``}`}
+>
+  <slot />
+  {customIcon && <span class="custom-icon__span"><slot name="icon">custom_icon</slot></span>}
+</Tag>
+
+<style>
+  .btn {
+    width: fit-content;
+    padding: 0.36rem 0.92rem;
+    margin-bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--theme-primary);
+    color: var(--theme-on-primary);
+    border: none;
+    border-radius: var(--theme-button-border-radius);
+    font-weight: 500;
+  }
+  .btn:hover {
+    background-color: var(--theme-primary-hover);
+  }
+  .btn--unelevated {
+    background-color: transparent;
+    color: var(--theme-on-bg);
+  }
+  .btn--unelevated:hover {
+    background-color: transparent;
+    opacity: var(--theme-primary-hover);
+  }
+  .btn--outlined {
+    color: var(--theme-primary);
+    background-color: transparent;
+    border: 2px solid var(--theme-primary);
+    transition: background-color var(--theme-transition);
+  }
+  .btn--outlined:hover {
+    background-color: var(--theme-primary);
+    color: var(--theme-on-primary);
+  }
+  .custom-icon__span {
+    margin-left: 0.25rem;
+    display: flex;
+    align-items: center;
+  }
+
+  .custom-icon__span :global(svg) {
+    width: 24px;
+    height: 24px;
+  }
+
+  a.btn {
+    text-decoration: none;
+  }
+  button.btn {
+    cursor: pointer;
+    outline: none;
+  }
+</style>

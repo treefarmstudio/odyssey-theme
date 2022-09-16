@@ -1,13 +1,25 @@
 {
-  "name": "odyssey-components",
-  "version": "1.0.0",
-  "private": false,
-  "scripts": {
-    "start": "astro --root demo dev",
-    "build": "astro --root demo build",
-    "serve": "astro --root demo preview"
+  "name": "@littlesticks/odyssey-theme-components",
+  "description": "Components for the Astro Odyssey theme",
+  "version": "0.0.20",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:littlesticksdev/odyssey-theme"
   },
-  "devDependencies": {
-    "astro": "^1.0.2"
+  "license": "MIT",
+  "type": "module",
+  "exports": "./index.js",
+  "keywords": [
+    "astro-component",
+    "astro-theme",
+    "starter",
+    "theme"
+  ],
+  "dependencies": {
+    "astro": "^1.0.2",
+    "astro-icon": "^0.7.3"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }

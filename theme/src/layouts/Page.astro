@@ -1,5 +1,5 @@
 ---
-import { Header, Button, Footer } from '@odyssey-theme/components';
+import { Header, Button, Footer } from '@littlesticks/odyssey-theme-components';
 import Layout from './Base.astro';
 import type { Props as BaseHeadProps } from '../components/head/BaseHead.astro';
 import Logo from '../components/Logo.astro';
@@ -33,6 +33,7 @@ const { seo } = Astro.props as Props;
 		footerLists={footerLists}
     footerSocials={footerSocials}
 		copyrightName={settings.name}
+    showLittleSticksPlug={settings.showLittleSticksPlug}
 	>
 		<Logo slot="logo" />
 	</Footer>

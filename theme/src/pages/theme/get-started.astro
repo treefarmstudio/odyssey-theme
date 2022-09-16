@@ -1,5 +1,6 @@
 ---
-import { Button, Container, TextCardSection } from '@odyssey-theme/components';
+import {Icon} from 'astro-icon';
+import { Button, Container, TextCardSection } from '@littlesticks/odyssey-theme-components';
 import Layout from '../../layouts/Page.astro';
 
 const seo = {
@@ -12,20 +13,38 @@ const seo = {
 	<Container>
 		<TextCardSection>
 			<h1>Get Started with Odyssey</h1>
-			<p>
-				To get started with Odyssey Theme we would highly recommend you use the
-				README on the repo or if this isn't your first rodeo you can use one of the
-				quick launch buttons below.
-			</p>
 			<div class="cta-buttons__container">
+        <Button
+					href="/theme/theme-setup"
+          customIcon
+					>
+          Theme Setup
+          <Fragment slot="icon">
+            <Icon name="ic:baseline-chevron-right" />
+          </Fragment>
+				</Button>
+        <Button
+					href="/theme/customizing-odyssey"
+          customIcon
+					>
+          Customizing Odyssey
+          <Fragment slot="icon">
+            <Icon name="ic:baseline-chevron-right" />
+          </Fragment>
+				</Button>
 				<Button
 					href="https://github.com/littlesticksdev/odyssey-theme"
 					outlined
 					newTab
-          materialIcon="launch"
-					>View Source
+          customIcon
+					>
+          View Source
+          <Fragment slot="icon">
+            <Icon name="ic:baseline-launch" />
+          </Fragment>
 				</Button>
 			</div>
+      <p>Not your first rodeo? Click one of the buttons below to create your own Odyssey Theme!</p>
 			<div class="code-buttons__container">
 				<a
 					href="https://app.netlify.com/start/deploy?repository=https://github.com/littlesticksdev/odyssey-theme"

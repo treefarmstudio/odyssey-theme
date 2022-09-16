@@ -1,5 +1,6 @@
 ---
-import { Container, FeatureCard } from '@odyssey-theme/components';
+import { Container, FeatureCard} from '@littlesticks/odyssey-theme-components';
+
 import Layout from '../layouts/Page.astro';
 import HomeHeroSection from '../components/sections/heros/HomeHeroSection.astro';
 ---
@@ -14,16 +15,12 @@ import HomeHeroSection from '../components/sections/heros/HomeHeroSection.astro'
 				ad campaign.
 			</p>
 			<div class="feature-card__grid">
-				<FeatureCard
-					href="/landing-pages/landing-1"
-					imgSrc="/assets/images/home/screenshots/landing-1.png"
-					title="Landing Page 1"
-				/>
-				<FeatureCard
-					href="/landing-pages/landing-2"
-					imgSrc="/assets/images/home/screenshots/landing-2.png"
-					title="Landing Page 2"
-				/>
+				<FeatureCard href="/landing-pages/landing-1" title="Landing Page 1" imgSrc="/assets/images/home/screenshots/landing-1">
+				</FeatureCard>
+				<FeatureCard href="/landing-pages/landing-2" title="Landing Page 2" imgSrc="/assets/images/home/screenshots/landing-2">
+				</FeatureCard>
+        <FeatureCard title="Landing Page 3" imgSrc="/assets/images/home/screenshots/landing-3">
+				</FeatureCard>
 			</div>
 		</section>
 	</Container>
@@ -36,31 +33,24 @@ import HomeHeroSection from '../components/sections/heros/HomeHeroSection.astro'
 				legal pages, blog posts, etc.
 			</p>
 			<div class="feature-card__grid">
-				<FeatureCard
-					href="/company/about"
-					imgSrc="/assets/images/home/screenshots/about.png"
-					title="About Page"
-				/>
-				<FeatureCard
-					href="/company/contact"
-					imgSrc="/assets/images/home/screenshots/contact.png"
-					title="Contact Page"
-				/>
-				<FeatureCard
-					href="/blog/"
-					imgSrc="/assets/images/home/screenshots/blog.png"
-					title="Blog Page"
-				/>
+				<FeatureCard href="/company/about" title="About Page" imgSrc="/assets/images/home/screenshots/about">
+				</FeatureCard>
+				<FeatureCard href="/company/contact" title="Contact Page" imgSrc="/assets/images/home/screenshots/contact">
+				</FeatureCard>
+				<FeatureCard href="/blog/" title="Blog Page" imgSrc="/assets/images/home/screenshots/blog">
+				</FeatureCard>
 				<FeatureCard
 					href="/blog/posts/remote-work-mental-health"
-					imgSrc="/assets/images/home/screenshots/blog-post.png"
 					title="Blog Post"
-				/>
+          imgSrc="/assets/images/home/screenshots/blog-post"
+				>
+				</FeatureCard>
 				<FeatureCard
 					href="/company/legal"
-					imgSrc="/assets/images/home/screenshots/legal.png"
+					imgSrc="/assets/images/home/screenshots/legal"
 					title="Legal Page"
-				/>
+				>
+				</FeatureCard>
 			</div>
 		</section>
 	</Container>
@@ -72,14 +62,16 @@ import HomeHeroSection from '../components/sections/heros/HomeHeroSection.astro'
 			<div class="feature-card__grid">
 				<FeatureCard
 					href="/theme/get-started"
-					imgSrc="/assets/images/home/screenshots/get-started.png"
+					imgSrc="/assets/images/home/screenshots/get-started"
 					title="Get Started"
-				/>
+				>
+				</FeatureCard>
 				<FeatureCard
 					href="/theme/style-guide"
-					imgSrc="/assets/images/home/screenshots/style-guide.png"
+					imgSrc="/assets/images/home/screenshots/style-guide"
 					title="Style Guide"
-				/>
+				>
+				</FeatureCard>
 			</div>
 		</section>
 	</Container>

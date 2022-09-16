@@ -1,4 +1,5 @@
 ---
+import {Icon} from 'astro-icon'
 import {
   AnnouncementBar,
 	Button,
@@ -7,7 +8,7 @@ import {
 	YouTubeEmbedSection,
   StickyTextImageSection,
   CtaCardSection
-} from '@odyssey-theme/components';
+} from '@littlesticks/odyssey-theme-components';
 import Layout from '../../layouts/Page.astro';
 import TextAndImageHero from '../../components/sections/heros/TextAndImageHero.astro';
 
@@ -25,8 +26,10 @@ const seo = {
 			<p>Use Odyssey Theme to jumpstart your company's marketing website.</p>
 		</div>
 		<div slot="btns-container">
-			<Button href="/theme/get-started" materialIcon="chevron_right"
-				>Get Started</Button
+			<Button href="/theme/get-started" customIcon
+				>Get Started <Fragment slot="icon">
+          <Icon name="ic:baseline-chevron-right"/>
+        </Fragment></Button
 			>
 		</div>
 		<picture slot="image-container">
@@ -76,7 +79,7 @@ const seo = {
 		<Button slot="column-3-cta">Learn More</Button>
 	</ThreeColumnTextSection>
 
-	<YouTubeEmbedSection url="https://youtu.be/dsTXcSeAZq8" rounded />
+	<YouTubeEmbedSection url="https://www.youtube.com/watch?v=cbYr75_R15M" rounded />
 
   <StickyTextImageSection>
     <div slot="text-container">
@@ -107,6 +110,7 @@ const seo = {
       <img
         src="/assets/images/landing-1/landing-sticky.jpg"
         alt="Astro Odyssey"
+        loading="lazy"
       />
     </picture>
   </StickyTextImageSection>
@@ -114,7 +118,9 @@ const seo = {
   <CtaCardSection background="var(--theme-surface-2)" color="var(--theme-on-surface-2)">
     <h2>Start Your Website Today</h2>
     <p>It only takes a couple clicks to have a new, modern website for your business or startup.</p>
-    <Button href="/theme/get-started" materialIcon="chevron_right">Get Started</Button>
+    <Button href="/theme/get-started" customIcon>Get Started <Fragment slot="icon">
+      <Icon name="ic:baseline-chevron-right"/>
+    </Fragment></Button>
   </CtaCardSection>
 
 </Layout>

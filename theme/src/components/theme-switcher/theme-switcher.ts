@@ -9,7 +9,33 @@ import {
 	orangeThemeIcon,
 } from './icons';
 
-export const tagName = 'theme-switcher';
+const themes = [
+  {
+    name: 'default',
+    icon: classicThemeIcon,
+    label: 'Classic',
+  },
+  {
+    name: 'dark',
+    icon: darkThemeIcon,
+    label: 'Dark',
+  },
+  {
+    name: 'earth',
+    icon: earthThemeIcon,
+    label: 'Earth',
+  },
+  {
+    name: 'ocean',
+    icon: blueThemeIcon,
+    label: 'Ocean',
+  },
+  {
+    name: 'sand',
+    icon: orangeThemeIcon,
+    label: 'Sand',
+  }
+]
 
 @customElement('theme-switcher')
 export class ThemeSwitcher extends LitElement {
@@ -56,98 +82,66 @@ export class ThemeSwitcher extends LitElement {
 	// set the _doc element
 	private _doc = document.firstElementChild;
 
-	private _heroImage: HTMLImageElement =
-		document.querySelector('#home-hero-image');
+	// private _heroImage: HTMLImageElement =
+	// 	document.querySelector('#home-hero-image');
 
 	@property({ type: String })
-	theme: string = 'default';
+	theme: string | null = null;
 
 	private _getCurrentTheme() {
 		// check for a local storage theme first
 		const localStorageTheme = localStorage.getItem('theme');
 		if (localStorageTheme !== null) {
 			this._setTheme(localStorageTheme);
-		}
+		} else {
+      this._setTheme('default');
+    }
 	}
 
-	connectedCallback() {
-		super.connectedCallback();
-		this._getCurrentTheme();
-	}
-
-	disconnectedCallback() {
-		super.disconnectedCallback();
-	}
+  firstUpdated() {
+    this._getCurrentTheme();
+  }
 
 	private _setTheme(theme) {
 		this._doc.setAttribute('data-theme', theme);
-		if (theme === 'default') {
-			this._heroImage.src = '/assets/images/home/classic-hero.jpg';
-		}
-		if (theme === 'dark') {
-			this._heroImage.src = '/assets/images/home/dark-hero.jpg';
-		}
-		if (theme === 'earth') {
-			this._heroImage.src = '/assets/images/home/earth-hero.jpg';
-		}
-		if (theme === 'ocean') {
-			this._heroImage.src = '/assets/images/home/ocean-hero.jpg';
-		}
-		if (theme === 'sand') {
-			this._heroImage.src = '/assets/images/home/sand-hero.jpg';
-		}
+		// if (theme === 'default') {
+		// 	this._heroImage.src = '/assets/images/home/classic-hero.jpg';
+		// }
+		// if (theme === 'dark') {
+		// 	this._heroImage.src = '/assets/images/home/dark-hero.jpg';
+		// }
+		// if (theme === 'earth') {
+		// 	this._heroImage.src = '/assets/images/home/earth-hero.jpg';
+		// }
+		// if (theme === 'ocean') {
+		// 	this._heroImage.src = '/assets/images/home/ocean-hero.jpg';
+		// }
+		// if (theme === 'sand') {
+		// 	this._heroImage.src = '/assets/images/home/sand-hero.jpg';
+		// }
 		localStorage.setItem('theme', theme);
 		this.theme = theme;
 	}
 
 	render() {
+    const themeButtons = html`${themes.map((theme) => {
+      return html`
+      <div class="theme-select__container">
+        <button
+          @click=${() => this._setTheme(theme.name)}
+          ?active=${this.theme === theme.name}
+          title=${`Enable ${theme.label} Theme`}
+        >
+          ${theme.icon}
+        </button>
+        <p>${theme.label}</p>
+        </div>
+      `
+    })}`
+
 		return html`
 			<div class="theme-switcher__container">
-				<div class="theme-select__container">
-					<button
-						@click=${() => this._setTheme('default')}
-						?active=${this.theme === 'default'}
-					>
-						${classicThemeIcon}
-					</button>
-					<p>Classic</p>
-				</div>
-				<div class="theme-select__container">
-					<button
-						@click=${() => this._setTheme('dark')}
-						?active=${this.theme === 'dark'}
-					>
-						${darkThemeIcon}
-					</button>
-					<p>Dark</p>
-				</div>
-				<div class="theme-select__container">
-					<button
-						@click=${() => this._setTheme('earth')}
-						?active=${this.theme === 'earth'}
-					>
-						${earthThemeIcon}
-					</button>
-					<p>Earth</p>
-				</div>
-				<div class="theme-select__container">
-					<button
-						@click=${() => this._setTheme('ocean')}
-						?active=${this.theme === 'ocean'}
-					>
-						${blueThemeIcon}
-					</button>
-					<p>Ocean</p>
-				</div>
-				<div class="theme-select__container">
-					<button
-						@click=${() => this._setTheme('sand')}
-						?active=${this.theme === 'sand'}
-					>
-						${orangeThemeIcon}
-					</button>
-					<p>Sand</p>
-				</div>
+				${themeButtons}
 			</div>
 		`;
 	}
