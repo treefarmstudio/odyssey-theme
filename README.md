@@ -6,9 +6,9 @@
 
 # Odyssey Theme
 
-This is the repo for the Odyssey Theme, a modern theme/starter for a business or startup's marketing website. It provides landing page examples, a full-featured blog, contact forms, and more. It is also fully theme-able to match your business' branding and style. It even includes a theme switcher component to show how easily the entire style of the site can be changed with only a few lines of CSS.
+Odyssey Theme is a modern theme/starter for a business or startup's marketing website. It provides landing page examples, a full-featured blog, contact forms, and more. It is fully themeable to match your business' branding and style. It even includes a theme switcher component to show how easily the entire style of the site can be changed with only a few lines of CSS.
 
-Some of its features includes but is not limited to:
+## Features
 
 - ✅ **A Full Featured Blog with Tagging**
 - ✅ **Fully theme-able styles with for buttons, shapes, backgrounds, surfaces, etc.**
@@ -27,7 +27,7 @@ View a [live demo](https://odyssey-theme.littlesticks.dev/) of the Odyssey Theme
 1. View the [Theme Setup Guide](https://odyssey-theme.littlesticks.dev/theme/theme-setup)
 2. View the [Customizing the Theme Guide](https://odyssey-theme.littlesticks.dev/theme/customizing-odyssey)
 
-## Installation & Setup
+## Usage
 
 ### Remote IDEs 
 
