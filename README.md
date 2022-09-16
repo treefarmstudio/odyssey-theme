@@ -13,7 +13,7 @@ Odyssey Theme is a modern theme/starter for a business or startup's marketing we
 ## Features
 
 <p align="center">
-  <img src="assets/lh-screenshot.png" height="112px" alt="Screenshot of perfect score in Lighthouse benchmark" style="width:auto;">
+  <img src="assets/lh-screenshot.png" alt="Screenshot of perfect score in Lighthouse benchmark">
 </p>
 
 
