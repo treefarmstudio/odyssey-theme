@@ -85,4 +85,4 @@ If you find this theme useful, please consider donating to support the developme
 
 Please feel free to reach out to us on our Discord if you have questions or file an issue on the repo.
 
-[Join Little Sticks Discord](https://littlesticks.dev/discord)
+[Join our Discord](https://littlesticks.dev/discord)
