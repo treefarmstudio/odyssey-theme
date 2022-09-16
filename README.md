@@ -4,6 +4,8 @@
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/9c5f2860-7adb-4b7d-91ad-9d13eda8bc46/deploy-status)](https://app.netlify.com/sites/odyssey-theme/deploys)
 
+![Github-sponsors](https://buy.stripe.com/9AQ3f202Jg2f9UcfYY)
+
 # Odyssey Theme
 
 Odyssey Theme is a modern theme/starter for a business or startup's marketing website. It provides landing page examples, a full-featured blog, contact forms, and more. It is fully themeable to match your business' branding and style. It even includes a theme switcher component to show how easily the entire style of the site can be changed with only a few lines of CSS.
@@ -11,7 +13,7 @@ Odyssey Theme is a modern theme/starter for a business or startup's marketing we
 ## Features
 
 <p align="center">
-  <img src="assets/lh-screenshot.png" height="112px" alt="Screenshot of perfect score in Lighthouse benchmark">
+  <img src="assets/lh-screenshot.png" height="112px" alt="Screenshot of perfect score in Lighthouse benchmark" style="width:auto;">
 </p>
 
 
