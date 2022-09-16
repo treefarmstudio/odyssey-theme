@@ -10,13 +10,19 @@ Odyssey Theme is a modern theme/starter for a business or startup's marketing we
 
 ## Features
 
+- ✅ **Blazing fast performance thanks to Astro 🚀**
 - ✅ **A Full Featured Blog with Tagging**
 - ✅ **Fully theme-able styles with for buttons, shapes, backgrounds, surfaces, etc.**
 - ✅ **Responsive mobile-friendly landing pages**
 - ✅ **SEO Best Practices (Open Graph, Canonical URLs, sitemap)**
-- ✅ **Performant Google Fonts Setup**
+- ✅ **Performant Local Fonts Setup**
 - ✅ **Contact Forms Setup for Netlify, Formspree, Formspark, etc.**
 - ✅ **A package of ready-to-use UI components**
+- ✅ **A perfect score in Lighthouse**
+
+<p align="center">
+  <img src="assets/lh-screenshot.png" height="112px" alt="Screenshot of perfect score in Lighthouse benchmark">
+</p>
 
 ## Demo
 
