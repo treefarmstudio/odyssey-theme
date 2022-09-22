@@ -2,7 +2,16 @@
   <img src="assets/gh-banner.png" alt="Odyssey Theme Banner">
 </p>
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/9c5f2860-7adb-4b7d-91ad-9d13eda8bc46/deploy-status)](https://app.netlify.com/sites/odyssey-theme/deploys)
+<br/>
+<div align="center">
+<a href="https://app.netlify.com/sites/odyssey-theme/deploys">
+  <img src="https://api.netlify.com/api/v1/badges/9c5f2860-7adb-4b7d-91ad-9d13eda8bc46/deploy-status" alt="Netlify Status"/>
+</a>
+  <a href="https://buy.stripe.com/9AQ3f202Jg2f9UcfYY">
+    <img src="https://img.shields.io/badge/sponsor-30363D?style=for-the-badge&logo=GitHub-Sponsors&logoColor=#EA4AAA" alt="Sponsor This Repo" />
+  </a>
+</div>
+<br/>
 
 # Odyssey Theme
 
