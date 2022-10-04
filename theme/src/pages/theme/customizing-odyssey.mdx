@@ -4,7 +4,7 @@ title: Customizing Odyssey Theme
 description: Learn how to customize Odyssey Theme's theme styles.
 ---
 
-This is one of the core features of Odyssey Theme and we've made it super easy to make the overall look and feel of the site your own with just a few top-level CSS custom properties. These custom properties and demo themes will be found in the `theme.css` file under `public/styles/`.
+This is one of the core features of Odyssey Theme and we've made it super easy to make the overall look and feel of the site your own with just a few top-level CSS custom properties. These custom properties and demo themes will be found in the `theme.css` file under `src/styles/`.
 
 First, If you are not planning on using the theme switcher found on the demo's home page we would recommend you go to the `settings.js` file under `src/config/` and set `enableThemeSwitcher` to false. This will remove the theme switcher components and javascript from your website.
 
@@ -96,7 +96,9 @@ Sometimes you want the animations to be consistent, especially on hover effects.
 
 ## Custom Font(s)
 
-1. Edit the Google Fonts import URL found in the `BaseHead.astro` file in the `src/components/head/` folder.
+1. Add our own fonts to the `/public/assets/fonts` directory
 
-2. Update your font stack with the `--theme-font-family-serif` and `--theme-font-family-sans` custom properties.
+2. Update the `@font-face` rules in the `src/styles/typography.css` file
+
+3. Update your font stack with the `--theme-font-family-serif` and `--theme-font-family-sans` custom properties.
 
