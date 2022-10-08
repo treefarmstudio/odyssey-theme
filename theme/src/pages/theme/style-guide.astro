@@ -39,7 +39,7 @@ const selectOptions = ['Option 1', 'Option 2', 'Option 3'];
 			</p>
 		</TextCardSection>
 		<section class="style-guide__section">
-			<div>
+			<div class="style-guide__title-container">
 				<h2>Colors</h2>
 			</div>
 			<div>
@@ -55,7 +55,7 @@ const selectOptions = ['Option 1', 'Option 2', 'Option 3'];
 			</div>
 		</section>
 		<section class="style-guide__section">
-			<div>
+			<div class="style-guide__title-container">
 				<h2>Typography</h2>
 			</div>
 			<div>
@@ -73,7 +73,7 @@ const selectOptions = ['Option 1', 'Option 2', 'Option 3'];
 			</div>
 		</section>
 		<section class="style-guide__section">
-			<div>
+			<div class="style-guide__title-container">
 				<h2>Buttons</h2>
 			</div>
 			<div>
@@ -98,7 +98,7 @@ const selectOptions = ['Option 1', 'Option 2', 'Option 3'];
 			</div>
 		</section>
 		<section class="style-guide__section">
-			<div>
+			<div class="style-guide__title-container">
 				<h2>Forms</h2>
 			</div>
 			<div class="style-guide-forms__container">
@@ -130,6 +130,10 @@ const selectOptions = ['Option 1', 'Option 2', 'Option 3'];
 		display: grid;
 		grid-template-columns: 1fr 1fr;
 	}
+  .style-guide__title-container h2 {
+    position: sticky;
+    top: 0;
+  }
 	.style-guide-forms__container {
 		display: grid;
 		gap: 1rem;
