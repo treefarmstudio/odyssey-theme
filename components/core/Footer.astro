@@ -50,8 +50,8 @@ const { footerSocials, footerLists, copyrightName, background, color, showLittle
       }
     </div>
     <div class="footer-copyright__container">
-      <p>Copyright &copy; {new Date().getFullYear()} {copyrightName}</p>
       {showLittleSticksPlug && <LittleSticksPlug/>}
+      <p>Copyright &copy; {new Date().getFullYear()} {copyrightName}</p>
     </div>
 
   </Container>
@@ -97,7 +97,8 @@ const { footerSocials, footerLists, copyrightName, background, color, showLittle
   }
   .footer-copyright__container {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    /* justify-content: space-between; */
   }
   .footer-copyright__container p {
     font-size: var(--font-size-sm);

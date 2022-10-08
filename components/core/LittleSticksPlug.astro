@@ -1,29 +1,35 @@
 ---
+import { Icon } from 'astro-icon';
 ---
 
-<p>
-	Theme by <span class="ls__logo"
-		><svg fill="none" viewBox="0 0 206 252" height="18px"
-			><path
-				stroke="currentColor"
-				stroke-linecap="round"
-				stroke-width="18.628"
-				d="M10 242.594 135.02 10M196.519 242.595 71.499 10"></path></svg
-		></span
-	><a href="https://littlesticks.dev">Little Sticks</a>
-</p>
+<a class="btn" href="https://littlesticks.dev/templates/odyssey-theme/" target="_blank" rel="noopener">Get This Template <span class="icon"><Icon name="ic:round-north-east" width="18px" height="18px"/></span></a>
 
 <style>
-  .ls__logo {
-    padding: 0 0.25rem
-  }
-	p {
-		font-size: var(--font-size-sm);
-	}
-  a {
-    text-decoration: none;
-  }
-  a:hover {
-    text-decoration: underline;
-  }
+.btn {
+  width: fit-content;
+  margin-bottom: 1rem;
+  display: inline-flex;
+  align-items: center;
+  padding: 0.5rem 0.75rem;
+  background-color: var(--theme-primary);
+  color: var(--theme-on-primary);
+  border-radius: 0.5rem;
+  text-decoration: none;
+  font-size: var(--font-size-sm);
+}
+
+.btn:hover {
+  background-color: var(--theme-primary-hover);
+}
+
+.btn:hover .icon {
+  transform: translate(0.15rem, -0.15rem);
+}
+
+.icon {
+  display: inline-block;
+  margin: 0.25rem 0 0 0.25rem;
+  vertical-align: middle; 
+  transition: transform 0.2s ease;
+}
 </style>
