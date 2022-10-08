@@ -1,7 +1,7 @@
 {
   "name": "@littlesticks/odyssey-theme-components",
   "description": "Components for the Astro Odyssey theme",
-  "version": "0.0.22",
+  "version": "0.0.23",
   "repository": {
     "type": "git",
     "url": "git@github.com:littlesticksdev/odyssey-theme"
