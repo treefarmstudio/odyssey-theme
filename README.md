@@ -7,7 +7,7 @@
   <a href="https://twitter.com/littlesticksdev">
   <img src="assets/twitter-badge.svg" alt="Follow Little Sticks on Twitter"/>
 </a>
-  <a href="https://littlesticks.dev/templates/odyssey-theme?get-template=true">
+  <a href="https://littlesticks.gumroad.com/l/odyssey-theme">
     <img src="assets/sponsor-badge.svg" alt="Sponsor This Repo" />
   </a>
   <a href="https://littlesticks.dev/discord">
@@ -92,7 +92,7 @@ Astro has [an in-depth guide](https://docs.astro.build/en/guides/deploy/) on how
 
 If you find this theme useful, please consider donating to support the continued development of it with the link below
 
-[Donate to Odyssey Theme](https://littlesticks.dev/templates/odyssey-theme?get-template=true)
+[Donate to Odyssey Theme](https://littlesticks.gumroad.com/l/odyssey-theme)
 
 ## Support
 
