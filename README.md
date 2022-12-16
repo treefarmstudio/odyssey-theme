@@ -92,7 +92,7 @@ Astro has [an in-depth guide](https://docs.astro.build/en/guides/deploy/) on how
 
 If you find this theme useful, please consider donating to support the continued development of it with the link below
 
-[Donate to Odyssey Theme](https://littlesticks.gumroad.com/l/odyssey-theme)
+[Donate to Odyssey Theme](https://littlesticks.lemonsqueezy.com/checkout?cart=1b9b09ef-0511-41ca-b94e-d6c6c4fde36e)
 
 ## Support
 
