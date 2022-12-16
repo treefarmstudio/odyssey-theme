@@ -7,7 +7,7 @@
   <a href="https://twitter.com/littlesticksdev">
   <img src="assets/twitter-badge.svg" alt="Follow Little Sticks on Twitter"/>
 </a>
-  <a href="https://littlesticks.gumroad.com/l/odyssey-theme">
+  <a href="https://littlesticks.lemonsqueezy.com/checkout?cart=1b9b09ef-0511-41ca-b94e-d6c6c4fde36e">
     <img src="assets/sponsor-badge.svg" alt="Sponsor This Repo" />
   </a>
   <a href="https://littlesticks.dev/discord">
