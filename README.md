@@ -50,28 +50,6 @@ View a [live demo](https://odyssey-theme.littlesticks.site/) of the Odyssey Them
 
 ## Usage
 
-### Remote IDEs 
-
-<p>
-  <a href="https://stackblitz.com/github/littlesticksdev/odyssey-theme/tree/main/theme">
-  <img src="https://developer.stackblitz.com/img/open_in_stackblitz.svg" height="36px" />
-  </a>
-</p>
-<p>
-  <a href="https://codesandbox.io/s/github/littlesticksdev/odyssey-theme/tree/main/theme">
-  <img src="https://odyssey-theme.littlesticks.dev/assets/images/badges/open-in-codesandbox.svg" height="36px" />
-  </a>
-</p>
-<p>
-  <a href="https://gitpod.io/#https://github.com/littlesticksdev/odyssey-theme/tree/main/theme">
-  <img src="https://odyssey-theme.littlesticks.dev/assets/images/badges/open-in-gitpod.svg" height="36px" />
-  </a>
-</p>
-
-**Or**
-
-### Local Development
-
 ```bash
 cd theme
 
@@ -81,8 +59,6 @@ npm start
 ```
 
 ## Deploy
-
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/littlesticksdev/odyssey-theme)
 
 Feel free to deploy and host your site on your favorite static hosting service such as Netlify, Firebase Hosting, Vercel, GitHub Pages, etc.
 
