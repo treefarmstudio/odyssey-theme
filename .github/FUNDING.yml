@@ -10,6 +10,6 @@ liberapay: # Replace with a single Liberapay username
 issuehunt: # Replace with a single IssueHunt username
 otechie: # Replace with a single Otechie username
 lfx_crowdfunding: # Replace with a single LFX Crowdfunding project-name e.g., cloud-foundry
-custom: https://littlesticks.lemonsqueezy.com/checkout?cart=1b9b09ef-0511-41ca-b94e-d6c6c4fde36e
+custom: https://littlesticks.lemonsqueezy.com/checkout?cart=d3ef814a-e881-42bd-87b2-a175d191a5e5
 
 # Replace with up to 4 custom sponsorship URLs e.g., ['link1', 'link2']
