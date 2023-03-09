@@ -1,0 +1,99 @@
+---
+import { TextSection, StickyTextImageSection } from '@littlesticks/odyssey-theme-components';
+import Layout from '../../layouts/Page.astro';
+import HeroSection from '../../components/sections/heros/HeroSection.astro';
+
+const seo = {
+	title: 'Meet the Team | Nightingale',
+	description: 'Meet the Team Page',
+};
+---
+
+<Layout {seo}>
+	<HeroSection>
+		<div slot="text-container">
+			<h1>Meet the Team</h1>
+			<p>
+				We are a group of 4th year Mechatronics Engineering students passionate about Robotics! Read more about us below!
+			</p>
+		</div>
+    <picture slot="image-container">
+      <img
+        src="/assets/images/home/nightingale_group.jpg"
+        alt="Astro Odyssee"
+        id="home-hero-image"
+      />
+    </picture>
+	</HeroSection>
+  <StickyTextImageSection>
+    <div slot="text-container">
+      <h3>Benjamin Schnapp</h3>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Est dolorem
+        tempore odio! Nemo consectetur ipsa aperiam similique maxime maiores
+        consequatur explicabo ut quibusdam fugiat corporis, dignissimos tenetur,
+        mollitia cumque. Velit.
+      </p>
+    </div>
+     <picture slot="image-container">
+      <img
+        src="/assets/images/landing-1/ben.png"
+        alt="Astro Odyssey"
+        loading="lazy"
+      />
+    </picture>
+  </StickyTextImageSection>
+  <StickyTextImageSection>
+    <div slot="text-container">
+      <h3>Felix Wong</h3>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Est dolorem
+        tempore odio! Nemo consectetur ipsa aperiam similique maxime maiores
+        consequatur explicabo ut quibusdam fugiat corporis, dignissimos tenetur,
+        mollitia cumque. Velit.
+      </p>
+    </div>
+     <picture slot="image-container">
+      <img
+        src="/assets/images/landing-1/felix.jpg"
+        alt="Astro Odyssey"
+        loading="lazy"
+      />
+    </picture>
+  </StickyTextImageSection>
+  <StickyTextImageSection>
+    <div slot="text-container">
+      <h3>Lyndon Truong</h3>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Est dolorem
+        tempore odio! Nemo consectetur ipsa aperiam similique maxime maiores
+        consequatur explicabo ut quibusdam fugiat corporis, dignissimos tenetur,
+        mollitia cumque. Velit.
+      </p>
+    </div>
+     <picture slot="image-container">
+      <img
+        src="/assets/images/landing-1/lyndon.png"
+        alt="Astro Odyssey"
+        loading="lazy"
+      />
+    </picture>
+  </StickyTextImageSection>
+  <StickyTextImageSection>
+    <div slot="text-container">
+      <h3>Younes Reda</h3>
+      <p>
+        Younes is the autonomous navigation lead for the project. His work enables Florence to navigate dense hospital floors,
+        avoiding both static and dynamic obstacles. Younes also brought up a simulation environment in which the team tested it's software prior to deploying on 
+        the real robot. Beyond engineering, Younes enjoys playing soccer and practicing Jiu-Jitsu.
+      </p>
+    </div>
+     <picture slot="image-container">
+      <img
+        src="/assets/images/landing-1/younes.png"
+        alt="Astro Odyssey"
+        loading="lazy"
+      />
+    </picture>
+  </StickyTextImageSection>
+</Layout>

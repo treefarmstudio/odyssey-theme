@@ -1,5 +1,5 @@
 ---
-import { Container, FeatureCard } from '@littlesticks/odyssey-theme-components';
+import { Container, FeatureCard, StickyTextImageSection} from '@littlesticks/odyssey-theme-components';
 
 import Layout from '../layouts/Page.astro';
 import HomeHeroSection from '../components/sections/heros/HomeHeroSection.astro';
@@ -9,12 +9,50 @@ import HomeHeroSection from '../components/sections/heros/HomeHeroSection.astro'
 	<HomeHeroSection />
 	<Container>
 		<section class="feature-card__section">
-			<h2>About our Project</h2>
+			<h2>Why Florence? Why Now?</h2>
 			<p>
-                Our project is a robot nurse assistant
+                The Canadian nursing shortage is real and is expected to worsen over the coming years. The deficit has grown by a staggering <strong>50%</strong> over the past decade (<a href="https://toronto.ctvnews.ca/ontario-s-nursing-shortage-has-been-an-issue-for-years-why-weren-t-we-prepared-for-the-covid-19-pandemic-1.5754102">source</a>).
+				Furthermore, this trend is expected to worsen as rates of disinterest in the nursing profession are largest among <strong>young nurses</strong> (<a href="https://nursesunions.ca/wp-content/uploads/2022/07/nurses_shortage_media_ref_guide_comp.pdf">source</a>). The effects of the nursing shortage
+				were made obvious during the Covid-19 pandemic leading to the over-working of front-line workers. We believe that a technology based solution like Florence allows for an agile, scalable,
+				and continously improveable approach to the problem.
 			</p>
 		</section>
+		<style>
+			.feature-card__section {
+				margin: var(--section-margin) auto;
+				max-width: 800px; /* Set the max width of the section */
+				text-align: center; /* Center the content horizontally */
+			}
+			.feature-card__section strong {
+				font-weight: bold;
+			}
+		</style>
 	</Container>
+	<StickyTextImageSection>
+    <div slot="text-container">
+      <h2>Florence Spotlight</h2>
+      <h3>Functionality</h3>
+      <p>
+        Florence's specialty is fulfilling delivery requests. She swiftly navigates
+		to the patient's bedisde. Once there, the patient makes their item selection through the tablet interface (exaples of items are blankets, snacks, and water).
+		Next, Florence navigates over to the nursing station where an administrator loads her basket with the items. Finally, Florence returns to the patient and dynamically determines
+		a location to extend the basket to. Finally, when the patient accepts the items, Florence returns home, where she eagerly awaits the next request. Checkout the Blog section for more details!
+      </p>
+      <h3>Sensor Suite</h3>
+        <p>
+        Florence uses an extensive sensor suite to reliably and safely fulfill the delivery requests. Florence is equipped with wheel encoders, an IMU, and lidar scanners at the base.
+		These sensors allow her to localize within the hospital floor and avoid obstacles during autonomous navigation. Furthermore, florence is equipped with a 3D-camera which allow dynamic
+		interactions with the patient and high precision arm encoders on both arms, allowing for precise motion.
+      </p>
+    </div>
+     <picture slot="image-container">
+      <img
+        src="/assets/images/landing-1/florence_selfie.jpg"
+        alt="Astro Odyssey"
+        loading="lazy"
+      />
+    </picture>
+  </StickyTextImageSection>
 </Layout>
 
 <style>
