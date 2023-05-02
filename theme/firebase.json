@@ -1,10 +1,12 @@
 {
-  "hosting": {
+  "hosting": [
+    {
+    "target": "odyssey-theme",
     "public": "dist",
     "ignore": [
       "firebase.json",
       "**/.*",
       "**/node_modules/**"
     ]
-  }
+  }]
 }
