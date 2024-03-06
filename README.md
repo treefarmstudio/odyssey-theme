@@ -4,16 +4,12 @@
 
 <br/>
 <div align="center">
-  <a href="https://twitter.com/littlesticksdev">
+  <a href="https://twitter.com/jaydanurwin">
   <img src="assets/twitter-badge.svg" alt="Follow Little Sticks on Twitter"/>
 </a>
-  <a href="https://littlesticks.lemonsqueezy.com/checkout?cart=1b9b09ef-0511-41ca-b94e-d6c6c4fde36e">
+  <a href="https://sapling.lemonsqueezy.com/checkout/buy/9b78751f-6382-442d-ac99-32c2318b70a0">
     <img src="assets/sponsor-badge.svg" alt="Sponsor This Repo" />
   </a>
-  <a href="https://littlesticks.dev/discord">
-    <img src="assets/discord-badge.svg" alt="Join our Discord" />
-  </a>
-  
 </div>
 <br/>
 
@@ -41,12 +37,12 @@ Odyssey Theme is a modern theme/starter for a business or startup's marketing we
 
 ## Demo
 
-View a [live demo](https://odyssey-theme.littlesticks.site/) of the Odyssey Theme.
+View a [live demo](https://odyssey-theme.sapling.supply/) of the Odyssey Theme.
 
 ## Documentation
 
-1. View the [Theme Setup Guide](https://odyssey-theme.littlesticks.site/theme/theme-setup)
-2. View the [Customizing the Theme Guide](https://odyssey-theme.littlesticks.site/theme/customizing-odyssey)
+1. View the [Theme Setup Guide](https://odyssey-theme.sapling.supply/theme/theme-setup)
+2. View the [Customizing the Theme Guide](https://odyssey-theme.sapling.supply/theme/customizing-odyssey)
 
 ## Usage
 
@@ -68,10 +64,8 @@ Astro has [an in-depth guide](https://docs.astro.build/en/guides/deploy/) on how
 
 If you find this theme useful, please consider donating to support the continued development of it with the link below
 
-[Donate to Odyssey Theme](https://littlesticks.lemonsqueezy.com/checkout?cart=1b9b09ef-0511-41ca-b94e-d6c6c4fde36e)
+[Donate to Odyssey Theme](https://sapling.lemonsqueezy.com/checkout/buy/9b78751f-6382-442d-ac99-32c2318b70a0)
 
 ## Support
 
-Please feel free to reach out to us on our Discord if you have questions or file an issue on the repo.
-
-[Join our Discord](https://littlesticks.dev/discord)
+Please feel free to post issues or submit PRs to this repo and we will do our best to respond in a timely manner, keeping in mind this template is offered for free as is on GitHub.

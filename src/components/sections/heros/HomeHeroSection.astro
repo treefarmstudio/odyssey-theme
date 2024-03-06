@@ -1,0 +1,79 @@
+---
+import { Icon } from 'astro-icon/components';
+import { Container, Button } from '@components/odyssey-theme';
+import settings from '../../../config/settings.js';
+import {ThemeSwitcher} from '../../theme-switcher/theme-switcher';
+---
+
+<Container>
+	<section class="hero-section__section">
+		<div class="hero-section__text">
+				<h1>Welcome to Odyssey</h1>
+				<p>
+					A marketing website theme built with <a
+						href="https://astro.build"
+						target="_blank"
+						rel="noreferrer">Astro</a
+					> and carefully crafted for startups and businesses.
+				</p>
+				<div class="hero-btns__container">
+					<Button href="/theme/get-started" customIcon
+						>Get Started
+            <Fragment slot="icon">
+              <Icon name="ic:baseline-chevron-right"/>
+            </Fragment>
+            </Button
+					>
+					<Button href="/theme/style-guide" unelevated>Style Guide</Button>
+				</div>
+        {settings.enableThemeSwitcher && <ThemeSwitcher client:only/>}
+		</div>
+		<div class="hero-section__image">
+				<picture>
+					<img
+						src="/assets/images/home/classic-hero.jpg"
+						alt="Astro Odyssey"
+						id="home-hero-image"
+					/>
+				</picture>
+		</div>
+	</section>
+</Container>
+
+<style>
+	.hero-section__section {
+		margin: var(--section-margin) auto;
+		min-height: clamp(90vh, 100vw, calc(100vh - var(--navbar-height)));
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		align-items: center;
+		gap: 1rem;
+	}
+	.hero-section__text {
+		justify-self: center;
+		max-width: 25rem;
+	}
+	.hero-btns__container {
+		display: flex;
+		align-items: center;
+		gap: 1rem;
+	}
+	.hero-btns__container {
+		margin-right: 1rem;
+	}
+	.hero-section__image {
+		display: flex;
+	}
+	.hero-section__image img {
+		width: 100%;
+		height: 100%;
+		max-height: 80vh;
+		object-fit: cover;
+		border-radius: var(--theme-shape-radius);
+	}
+	@media (max-width: 768px) {
+		.hero-section__section {
+			grid-template-columns: 1fr;
+		}
+	}
+</style>

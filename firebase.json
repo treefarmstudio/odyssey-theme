@@ -1,0 +1,11 @@
+{
+  "hosting": {
+    "site": "odyssey-theme-sapling",
+    "public": "dist",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}

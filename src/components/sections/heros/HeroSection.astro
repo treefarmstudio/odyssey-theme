@@ -1,0 +1,54 @@
+---
+import { Container } from '@components/odyssey-theme';
+---
+
+<Container>
+	<section class="hero-section__section">
+		<div class="hero-section__text">
+			<slot name="text-container"></slot>
+		</div>
+		<div class="hero-section__image">
+			<slot name="image-container">
+			</slot>
+		</div>
+	</section>
+</Container>
+
+<style>
+	.hero-section__section {
+		margin: var(--section-margin) auto;
+		min-height: clamp(90vh, 100vw, calc(100vh - var(--navbar-height)));
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		align-items: center;
+		gap: 1rem;
+	}
+	.hero-section__text {
+		justify-self: center;
+		max-width: 25rem;
+	}
+	.hero-btns__container {
+		display: flex;
+		align-items: center;
+		gap: 1rem;
+	}
+	.hero-btns__container {
+		margin-right: 1rem;
+	}
+	.hero-section__image {
+		display: flex;
+	}
+	.hero-section__image :global(img) {
+		width: 100%;
+		height: 100%;
+		max-height: 80vh;
+		object-fit: cover;
+		border-radius: var(--theme-shape-radius);
+	}
+	@media (max-width: 768px) {
+		.hero-section__section {
+			margin: 2rem auto 0 auto;
+			grid-template-columns: 1fr;
+		}
+	}
+</style>
