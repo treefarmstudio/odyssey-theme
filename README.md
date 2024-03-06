@@ -7,7 +7,7 @@
   <a href="https://twitter.com/jaydanurwin">
   <img src="assets/twitter-badge.svg" alt="Follow Little Sticks on Twitter"/>
 </a>
-  <a href="https://littlesticks.lemonsqueezy.com/checkout?cart=1b9b09ef-0511-41ca-b94e-d6c6c4fde36e">
+  <a href="https://sapling.lemonsqueezy.com/checkout/buy/9b78751f-6382-442d-ac99-32c2318b70a0">
     <img src="assets/sponsor-badge.svg" alt="Sponsor This Repo" />
   </a>
 </div>
@@ -64,7 +64,7 @@ Astro has [an in-depth guide](https://docs.astro.build/en/guides/deploy/) on how
 
 If you find this theme useful, please consider donating to support the continued development of it with the link below
 
-[Donate to Odyssey Theme](https://littlesticks.lemonsqueezy.com/checkout?cart=1b9b09ef-0511-41ca-b94e-d6c6c4fde36e)
+[Donate to Odyssey Theme](https://sapling.lemonsqueezy.com/checkout/buy/9b78751f-6382-442d-ac99-32c2318b70a0)
 
 ## Support
 
