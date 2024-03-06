@@ -1,5 +1,5 @@
 ---
-import {Icon} from 'astro-icon'
+import { Icon } from 'astro-icon/components';
 import {
 	TextCardSection,
 	Container,
@@ -90,11 +90,12 @@ const selectOptions = ['Option 1', 'Option 2', 'Option 3'];
 					<Button outlined>Button 3</Button>
 				</p>
 				<p>Button With Custom Icon</p>
-				<Button customIcon>Launch Page
-          <Fragment slot="icon">
-            <Icon name="ic:baseline-launch" />
-          </Fragment>
-        </Button>
+				<Button customIcon
+					>Launch Page
+					<Fragment slot="icon">
+						<Icon name="ic:baseline-launch" />
+					</Fragment>
+				</Button>
 			</div>
 		</section>
 		<section class="style-guide__section">
@@ -130,10 +131,10 @@ const selectOptions = ['Option 1', 'Option 2', 'Option 3'];
 		display: grid;
 		grid-template-columns: 1fr 1fr;
 	}
-  .style-guide__title-container h2 {
-    position: sticky;
-    top: 0;
-  }
+	.style-guide__title-container h2 {
+		position: sticky;
+		top: 0;
+	}
 	.style-guide-forms__container {
 		display: grid;
 		gap: 1rem;

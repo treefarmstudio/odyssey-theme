@@ -13,15 +13,17 @@
 		"preview": "astro preview",
 		"format": "npx prettier -w ."
 	},
-  "devDependencies": {
-    "@astrojs/lit": "^4.0.1",
+	"devDependencies": {
+		"@astrojs/lit": "^4.0.1",
 		"@astrojs/mdx": "^2.1.1",
 		"@astrojs/sitemap": "^0.1.0",
 		"@webcomponents/template-shadowroot": "^0.2.1",
 		"astro": "^4.4.13",
-		"astro-icon": "^0.7.3",
+		"astro-icon": "^1.1.0",
 		"date-fns": "^2.28.0",
 		"lit": "^3.1.2",
-		"prettier-plugin-astro": "^0.0.12"
+		"prettier-plugin-astro": "^0.0.12",
+    "@iconify-json/ic": "^1.1.17",
+    "@iconify-json/mdi": "^1.1.64"
 	}
 }

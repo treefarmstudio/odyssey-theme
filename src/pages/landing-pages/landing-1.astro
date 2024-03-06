@@ -1,13 +1,13 @@
 ---
-import {Icon} from 'astro-icon'
+import { Icon } from 'astro-icon/components';
 import {
-  AnnouncementBar,
+	AnnouncementBar,
 	Button,
 	CustomerQuoteSection,
 	ThreeColumnTextSection,
 	YouTubeEmbedSection,
-  StickyTextImageSection,
-  CtaCardSection
+	StickyTextImageSection,
+	CtaCardSection,
 } from '@components/odyssey-theme';
 import Layout from '../../layouts/Page.astro';
 import TextAndImageHero from '../../components/sections/heros/TextAndImageHero.astro';
@@ -18,8 +18,12 @@ const seo = {
 };
 ---
 
-<AnnouncementBar text="Read Our Latest Blog Post" href="/blog/posts/remote-work-mental-health/" slot="announcement-bar"/>
-<Layout seo={seo} >
+<AnnouncementBar
+	text="Read Our Latest Blog Post"
+	href="/blog/posts/remote-work-mental-health/"
+	slot="announcement-bar"
+/>
+<Layout {seo}>
 	<TextAndImageHero reversed>
 		<div slot="text-container">
 			<h1>Don't Reinvent the Wheel</h1>
@@ -28,8 +32,8 @@ const seo = {
 		<div slot="btns-container">
 			<Button href="/theme/get-started" customIcon
 				>Get Started <Fragment slot="icon">
-          <Icon name="ic:baseline-chevron-right"/>
-        </Fragment></Button
+					<Icon name="ic:baseline-chevron-right" />
+				</Fragment></Button
 			>
 		</div>
 		<picture slot="image-container">
@@ -79,49 +83,56 @@ const seo = {
 		<Button slot="column-3-cta">Learn More</Button>
 	</ThreeColumnTextSection>
 
-	<YouTubeEmbedSection url="https://www.youtube.com/watch?v=cbYr75_R15M" rounded />
+	<YouTubeEmbedSection url="https://www.youtube.com/watch?v=cbYr75_R15M" rounded
+	/>
 
-  <StickyTextImageSection>
-    <div slot="text-container">
-      <h2>Features</h2>
-      <h3>SEO</h3>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Est dolorem
-        tempore odio! Nemo consectetur ipsa aperiam similique maxime maiores
-        consequatur explicabo ut quibusdam fugiat corporis, dignissimos tenetur,
-        mollitia cumque. Velit.
-      </p>
-      <h3>Responsive</h3>
-        <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Est dolorem
-        tempore odio! Nemo consectetur ipsa aperiam similique maxime maiores
-        consequatur explicabo ut quibusdam fugiat corporis, dignissimos tenetur,
-        mollitia cumque. Velit.
-      </p>
-      <h3>Themeable</h3>
-        <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Est dolorem
-        tempore odio! Nemo consectetur ipsa aperiam similique maxime maiores
-        consequatur explicabo ut quibusdam fugiat corporis, dignissimos tenetur,
-        mollitia cumque. Velit.
-      </p>
-    </div>
-     <picture slot="image-container">
-      <img
-        src="/assets/images/landing-1/landing-sticky.jpg"
-        alt="Astro Odyssey"
-        loading="lazy"
-      />
-    </picture>
-  </StickyTextImageSection>
+	<StickyTextImageSection>
+		<div slot="text-container">
+			<h2>Features</h2>
+			<h3>SEO</h3>
+			<p>
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Est dolorem
+				tempore odio! Nemo consectetur ipsa aperiam similique maxime maiores
+				consequatur explicabo ut quibusdam fugiat corporis, dignissimos tenetur,
+				mollitia cumque. Velit.
+			</p>
+			<h3>Responsive</h3>
+			<p>
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Est dolorem
+				tempore odio! Nemo consectetur ipsa aperiam similique maxime maiores
+				consequatur explicabo ut quibusdam fugiat corporis, dignissimos tenetur,
+				mollitia cumque. Velit.
+			</p>
+			<h3>Themeable</h3>
+			<p>
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Est dolorem
+				tempore odio! Nemo consectetur ipsa aperiam similique maxime maiores
+				consequatur explicabo ut quibusdam fugiat corporis, dignissimos tenetur,
+				mollitia cumque. Velit.
+			</p>
+		</div>
+		<picture slot="image-container">
+			<img
+				src="/assets/images/landing-1/landing-sticky.jpg"
+				alt="Astro Odyssey"
+				loading="lazy"
+			/>
+		</picture>
+	</StickyTextImageSection>
 
-  <CtaCardSection background="var(--theme-surface-2)" color="var(--theme-on-surface-2)">
-    <h2>Start Your Website Today</h2>
-    <p>It only takes a couple clicks to have a new, modern website for your business or startup.</p>
-    <Button href="/theme/get-started" customIcon>Get Started <Fragment slot="icon">
-      <Icon name="ic:baseline-chevron-right"/>
-    </Fragment></Button>
-  </CtaCardSection>
-
+	<CtaCardSection
+		background="var(--theme-surface-2)"
+		color="var(--theme-on-surface-2)"
+	>
+		<h2>Start Your Website Today</h2>
+		<p>
+			It only takes a couple clicks to have a new, modern website for your
+			business or startup.
+		</p>
+		<Button href="/theme/get-started" customIcon
+			>Get Started <Fragment slot="icon">
+				<Icon name="ic:baseline-chevron-right" />
+			</Fragment></Button
+		>
+	</CtaCardSection>
 </Layout>
-
