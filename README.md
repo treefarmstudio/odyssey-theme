@@ -4,16 +4,12 @@
 
 <br/>
 <div align="center">
-  <a href="https://twitter.com/littlesticksdev">
+  <a href="https://twitter.com/jaydanurwin">
   <img src="assets/twitter-badge.svg" alt="Follow Little Sticks on Twitter"/>
 </a>
   <a href="https://littlesticks.lemonsqueezy.com/checkout?cart=1b9b09ef-0511-41ca-b94e-d6c6c4fde36e">
     <img src="assets/sponsor-badge.svg" alt="Sponsor This Repo" />
   </a>
-  <a href="https://littlesticks.dev/discord">
-    <img src="assets/discord-badge.svg" alt="Join our Discord" />
-  </a>
-  
 </div>
 <br/>
 
@@ -72,6 +68,4 @@ If you find this theme useful, please consider donating to support the continued
 
 ## Support
 
-Please feel free to reach out to us on our Discord if you have questions or file an issue on the repo.
-
-[Join our Discord](https://littlesticks.dev/discord)
+Please feel free to post issues or submit PRs to this repo and we will do our best to respond in a timely manner, keeping in mind this template is offered for free as is on GitHub.
