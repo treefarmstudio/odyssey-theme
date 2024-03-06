@@ -1,0 +1,75 @@
+---
+import { Container } from '@components/odyssey-theme';
+import Layout from './Page.astro'; 
+import { generateTagData } from '../utils/helpers';
+
+const {content: {title, description, publishDate, canonicalURL, featuredImage, tags} } = Astro.props;
+
+let allTagsData = [];
+
+if(tags && tags.length > 0){
+  allTagsData = generateTagData(tags);
+}
+
+const seo = {
+	title,
+	description,
+  publishDate,
+	canonicalURL,
+	image: featuredImage,
+};
+---
+<Layout seo={seo}> 
+  <div class="post-header__container"> 
+    <ul class="post-tags__list">
+      {allTagsData.map(tag => (
+        <li class="post-tags__tag">
+          <a href={`/blog/tags/${tag.slug}`}>
+            {tag.title}
+          </a>
+        </li>
+      ))}
+    </ul>
+    <h1>{title}</h1>
+    <p class="post-layout__date">
+      <time><em>{publishDate}</em></time>
+    </p>
+    {featuredImage && <img class="post-layout__img" src={featuredImage} alt={title} />}
+  </div>
+  <Container narrow>  
+    <article id="article">
+        <slot></slot>
+    </article>
+  </Container>
+</Layout>
+
+<style>
+  #article {
+    padding-bottom: 3rem;
+  }
+  .post-header__container {
+    max-width: var(--theme-blog-post-header-width);
+    margin: 1rem auto;
+    padding: var(--container-padding);
+  }
+  .post-tags__list {
+    margin: 1rem auto;
+    padding: 0;
+    list-style: none;
+  }
+  .post-tags__tag {
+    text-transform: uppercase;
+  }
+  .post-tags__tag a {
+    font-size: var(--font-size-sm);
+    text-decoration: none;
+  }
+  .post-layout__img {
+    margin: 0 auto 1rem auto;
+    border-radius: var(--theme-shape-radius);
+  }
+  .post-layout__date {
+    margin-bottom: 1rem;
+    opacity: 0.84;
+  }
+</style>

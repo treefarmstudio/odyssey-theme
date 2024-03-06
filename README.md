@@ -41,12 +41,12 @@ Odyssey Theme is a modern theme/starter for a business or startup's marketing we
 
 ## Demo
 
-View a [live demo](https://odyssey-theme.littlesticks.site/) of the Odyssey Theme.
+View a [live demo](https://odyssey-theme.sapling.supply/) of the Odyssey Theme.
 
 ## Documentation
 
-1. View the [Theme Setup Guide](https://odyssey-theme.littlesticks.site/theme/theme-setup)
-2. View the [Customizing the Theme Guide](https://odyssey-theme.littlesticks.site/theme/customizing-odyssey)
+1. View the [Theme Setup Guide](https://odyssey-theme.sapling.supply/theme/theme-setup)
+2. View the [Customizing the Theme Guide](https://odyssey-theme.sapling.supply/theme/customizing-odyssey)
 
 ## Usage
 
