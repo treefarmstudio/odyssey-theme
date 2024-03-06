@@ -91,7 +91,13 @@ export class ThemeSwitcher extends LitElement {
 		if (localStorageTheme !== null) {
 			this._setTheme(localStorageTheme);
 		} else {
-      this._setTheme('default');
+    	// Set default theme to dark if the operating system specifies this preference
+			if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+				this._setTheme('dark');
+			} else{ // Set to default/light theme if no specification, or light theme is specified
+				this._setTheme('default');
+			}
+    		
     }
 	}
 
