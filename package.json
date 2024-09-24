@@ -1,6 +1,6 @@
 {
 	"name": "odyssey-theme",
-	"version": "2.0.2",
+	"version": "3.1.0",
 	"private": false,
 	"repository": {
 		"type": "git",
@@ -23,7 +23,7 @@
 		"date-fns": "^2.28.0",
 		"lit": "^3.1.2",
 		"prettier-plugin-astro": "^0.0.12",
-    "@iconify-json/ic": "^1.1.17",
-    "@iconify-json/mdi": "^1.1.64"
+		"@iconify-json/ic": "^1.1.17",
+		"@iconify-json/mdi": "^1.1.64"
 	}
 }

@@ -1,9 +1,9 @@
 ---
 import { Icon } from 'astro-icon/components';
 import Container  from '../core/Container.astro';
-import LittleSticksPlug from './LittleSticksPlug.astro';
+import Plug from './Plug.astro';
 
-const { footerSocials, footerLists, copyrightName, background, color, showLittleSticksPlug = true } =
+const { footerSocials, footerLists, copyrightName, background, color, showPlug: showPlug = true } =
   Astro.props;
 ---
 
@@ -50,7 +50,7 @@ const { footerSocials, footerLists, copyrightName, background, color, showLittle
       }
     </div>
     <div class="footer-copyright__container">
-      {showLittleSticksPlug && <LittleSticksPlug/>}
+      {showPlug && <Plug/>}
       <p>Copyright &copy; {new Date().getFullYear()} {copyrightName}</p>
     </div>
 
