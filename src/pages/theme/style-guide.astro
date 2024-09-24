@@ -1,0 +1,166 @@
+---
+import { Icon } from 'astro-icon/components';
+import {
+	TextCardSection,
+	Container,
+	Button,
+	FormInput,
+	FormSelect,
+	FormTextarea,
+} from '@components/odyssey-theme';
+import Layout from '../../layouts/Page.astro';
+
+const seo = {
+	title: 'Astro Odyssey Theme Style Guide',
+	description: 'Get started on how to setup and use this Astro theme.',
+};
+
+const selectOptions = ['Option 1', 'Option 2', 'Option 3'];
+---
+
+<Layout {seo}>
+	<Container>
+		<TextCardSection>
+			<h1>Style Guide</h1>
+			<p>
+				This is the style guide for the <a
+					href="https://github.com/littlesticksdev/odyssey-theme"
+					target="_blank"
+					rel="noopener noreferrer">Odyssey Theme</a
+				>. Everything you'll find in the theme's starter repo is either a
+				component from the <a
+					href="https://www.npmjs.com/package/@components/odyssey-theme"
+					target="_blank"
+					rel="noopener noreferrer">Odyssey Components Package</a
+				> or built using a component. Not only does this allow for a fully modular
+				setup that receives updates and improvements over time but also allows you
+				to use bits and pieces as needed to create your own unique website with Odyssey
+				as the foundation.
+			</p>
+		</TextCardSection>
+		<section class="style-guide__section">
+			<div class="style-guide__title-container">
+				<h2>Colors</h2>
+			</div>
+			<div>
+				<div class="style-guide-color__card">
+					<h3>Primary</h3>
+				</div>
+				<div class="style-guide-color__card style-guide-color__card--surface-1">
+					<h3>Surface 1</h3>
+				</div>
+				<div class="style-guide-color__card style-guide-color__card--surface-2">
+					<h3>Surface 2</h3>
+				</div>
+			</div>
+		</section>
+		<section class="style-guide__section">
+			<div class="style-guide__title-container">
+				<h2>Typography</h2>
+			</div>
+			<div>
+				<h1>Heading 1</h1>
+				<h2>Heading 2</h2>
+				<h3>Heading 3</h3>
+				<h4>Heading 4</h4>
+				<h5>Heading 5</h5>
+				<h6>Heading 6</h6>
+				<p>Body Text</p>
+				<blockquote>
+					“Don’t settle for what life gives you; make life better and build
+					something.” — Ashton Kutcher
+				</blockquote>
+			</div>
+		</section>
+		<section class="style-guide__section">
+			<div class="style-guide__title-container">
+				<h2>Buttons</h2>
+			</div>
+			<div>
+				<p>Button</p>
+				<p>
+					<Button>Button 1</Button>
+				</p>
+				<p>Unelevated Button</p>
+				<p>
+					<Button unelevated>Button 2</Button>
+				</p>
+				<p>Outlined Button</p>
+				<p>
+					<Button outlined>Button 3</Button>
+				</p>
+				<p>Button With Custom Icon</p>
+				<Button customIcon
+					>Launch Page
+					<Fragment slot="icon">
+						<Icon name="ic:baseline-launch" />
+					</Fragment>
+				</Button>
+			</div>
+		</section>
+		<section class="style-guide__section">
+			<div class="style-guide__title-container">
+				<h2>Forms</h2>
+			</div>
+			<div class="style-guide-forms__container">
+				<div>
+					<h3>Input With Label</h3>
+					<FormInput type="text" label="Name" name="Name" placeholder="John Doe"
+					/>
+				</div>
+				<div>
+					<h3>Input Without Label</h3>
+					<FormInput type="text" name="Name" placeholder="John Doe" />
+				</div>
+				<div>
+					<h3>Select Dropdown</h3>
+					<FormSelect options={selectOptions} />
+				</div>
+				<div>
+					<h3>Textarea</h3>
+					<FormTextarea name="Message" placeholder="Your message here..." />
+				</div>
+			</div>
+		</section>
+	</Container>
+</Layout>
+
+<style>
+	.style-guide__section {
+		margin: var(--section-margin) auto;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	}
+	.style-guide__title-container h2 {
+		position: sticky;
+		top: 0;
+	}
+	.style-guide-forms__container {
+		display: grid;
+		gap: 1rem;
+	}
+	.style-guide-forms__container h3 {
+		margin-bottom: 0.5rem;
+	}
+	.style-guide-color__card {
+		margin-bottom: 1rem;
+		background-color: var(--theme-primary);
+		color: var(--theme-on-primary);
+		padding: 1rem;
+		border-radius: var(--theme-shape-radius);
+	}
+	.style-guide-color__card--surface-1 {
+		background-color: var(--theme-surface-1);
+		color: var(--theme-on-surface-1);
+	}
+	.style-guide-color__card--surface-2 {
+		background-color: var(--theme-surface-2);
+		color: var(--theme-on-surface-2);
+	}
+	@media (max-width: 768px) {
+		.style-guide__section {
+			grid-template-columns: 1fr;
+			gap: 2rem;
+		}
+	}
+</style>

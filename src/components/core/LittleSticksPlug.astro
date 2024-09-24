@@ -1,0 +1,35 @@
+---
+import { Icon } from 'astro-icon/components';
+---
+
+<a class="btn" href="https://github.com/treefarmstudio/odyssey-theme/" target="_blank" rel="noopener">Get This Template <span class="icon"><Icon name="ic:round-north-east" width="18px" height="18px"/></span></a>
+
+<style>
+.btn {
+  width: fit-content;
+  margin-bottom: 1rem;
+  display: inline-flex;
+  align-items: center;
+  padding: 0.5rem 0.75rem;
+  background-color: var(--theme-primary);
+  color: var(--theme-on-primary);
+  border-radius: 0.5rem;
+  text-decoration: none;
+  font-size: var(--font-size-sm);
+}
+
+.btn:hover {
+  background-color: var(--theme-primary-hover);
+}
+
+.btn:hover .icon {
+  transform: translate(0.15rem, -0.15rem);
+}
+
+.icon {
+  display: inline-block;
+  margin: 0.25rem 0 0 0.25rem;
+  vertical-align: middle; 
+  transition: transform 0.2s ease;
+}
+</style>

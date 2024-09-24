@@ -1,0 +1,29 @@
+---
+import {Icon} from 'astro-icon/components'
+import {Button, FormInput } from "@components/odyssey-theme";
+
+---
+
+<form name="Newsletter Form" method="POST" action="/newsletter-thank-you">
+  <div class="newsletter-form__container">
+    <FormInput name="Email" placeholder="hello@example.com"/>
+    <Button customIcon>Submit
+      <Fragment slot="icon">
+        <Icon name="ic:baseline-chevron-right" />
+      </Fragment>
+    </Button>
+  </div>
+</form>
+
+<style>
+.newsletter-form__container {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 1rem;
+}
+@media (max-width: 600px) {
+  .newsletter-form__container {
+    grid-template-columns: 1fr;
+  }
+}
+</style>
