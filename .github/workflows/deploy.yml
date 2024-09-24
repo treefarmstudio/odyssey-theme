@@ -38,5 +38,5 @@ jobs:
         uses: denoland/deployctl@v1
         with:
           project: "jaydanurwin-odyssey-the-23"
-          entrypoint: "server/entry.mjs"
+          entrypoint: "https://jsr.io/@std/http/1.0.7/file_server.ts"
           root: "dist"
