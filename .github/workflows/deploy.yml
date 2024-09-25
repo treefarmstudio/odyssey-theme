@@ -1,9 +1,9 @@
 name: Deploy
 on:
   push:
-    branches: next
+    branches: main
   pull_request:
-    branches: next
+    branches: main
 
 jobs:
   deploy:
@@ -37,6 +37,6 @@ jobs:
       - name: Upload to Deno Deploy
         uses: denoland/deployctl@v1
         with:
-          project: "jaydanurwin-odyssey-the-23"
+          project: "odyssey-theme"
           entrypoint: "https://jsr.io/@std/http/1.0.7/file_server.ts"
           root: "dist"
